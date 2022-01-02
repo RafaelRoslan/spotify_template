@@ -5,113 +5,208 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Title</title>
-    <link rel="stylesheet" href="#">
+    <title>Spotify Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <nav>
-        <!-- LOGO Spotify -->
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Buscar</a></li>
-            <li><a href="#">Sua Biblioteca</a></li>
-        </ul>
-        <!-- espaço vazio -->
-        <ul>
-            <li><a href="#">Criar playlist</a></li>
-            <li><a href="#">Músicas Curtidas</a></li>
-            <li><a href="#">Seus episódios</a></li>
-        </ul>
-        <hr>
-        <!-- n musicas -->
-    </nav>
-    <main>
-        <nav>
-            <!-- barra de ir/voltar -->
-            <!-- botao  usuario -->
-        </nav>
-        <section>
-            <h2>Olá Steve</h2>
-             <!-- ultimas playlist/paginas acessadas -->
-            <ul>
-                <li>
-                    <!-- imagem -->
-                    <a href="#">Musicas curtidas</a>
-                </li>
-                <li>
-                    <!-- imagem -->
-                    <a href="#">Anime</a>
-                </li>
-                <li>
-                    <!-- imagem -->
-                    <a href="#">Rock</a>
-                </li>
-                <li>
-                    <!-- imagem -->
-                    <a href="#">Michael Jackson</a>
-                </li>
-                <li>
-                    <!-- imagem -->
-                    <a href="#">Flow</a>
-                </li>
-                <li>
-                    <!-- imagem -->
-                    <a href="#">Zigaexperientia</a>
-                </li>
-                <li>
-                    <!-- imagem -->
-                    <a href="#">Cesar Menoti e Fabiano</a>
-                </li>
-                <li>
-                    <!-- imagem -->
-                    <a href="#">Aquaz Times</a>
-                </li>
-            </ul>
-        </section>
+    <div class="d-flex h-100">
+        <header class="p-2 sidebar bg-sidebar">
+            <nav class="d-flex navbar py-3">
+                <!-- LOGO Spotify -->
+                <a href="#" class="d-flex logo-margin px-2">
+                    <img src="assets/img/logo.svg" alt="logo" class="logo mx-2">
 
-        <section>
-        <h3><a href="#">Seus programas</a></h3>
-        <a href="#">ver tudo</a>
-        <!-- ultimos podcasts acessados -->
-        <ul>
-            <li>
-                <!-- imagem -->
-                <a href="#">ICONICast - Arte e Desenho</a>
-                <h5>ICONIC Network</h5>
-            </li>
-            <li>
-                <!-- imagem -->
-                <a href="#">Paciente 63</a>
-                <h5>Spotify Studios</h5>
-            </li>
-            <li>
-                <!-- imagem -->
-                <a href="#">Histórias em Inglês</a>
-                <h5>Duolingo</h5>
-            </li>
-            <li>
-                <!-- imagem -->
-                <a href="#">Percy Jackson</a>
-                <h5>AudioBooks</h5>
-            </li>
-            <li>
-                <!-- imagem -->
-                <a href="#">NerdCast</a>
-                <h5>Jovem Nerd</h5>
-            </li>
-            <li>
-                <!-- imagem -->
-                <a href="#">Pensando RPG</a>
-                <h5>Leonardo Schabbach</h5>
-            </li>
-        </ul>
-        </section>
-    </main>
+                </a>
+                <ul class="nav nav-pills flex-grow-1 flex-column mb-4">
+                    <li class="nav-item"><a href="#" class="nav-link active">
+                            <div class="d-flex flex-nowrap">
+                                <img src="assets/img/house-door-fill.svg" alt="home/inicio" class="icon-size">
+                                <p class="mx-3">Início</p>
+                            </div>
+                        </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <div class="d-flex flex-nowrap">
+                                <img src="assets/img/search.svg" alt="home/inicio" class="icon-size">
+                                <p class="mx-3">Buscar</p>
+                            </div>
+                        </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <div class="d-flex flex-nowrap">
+                                <img src="assets/img/book.svg" alt="home/inicio" class="icon-size">
+                                <p class="mx-3">Sua Biblioteca</p>
+                            </div>
+                        </a></li>
+                </ul>
+                <!-- espaço vazio -->
+                <ul class="nav nav-pills flex-grow-1 flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <div class="d-flex flex-nowrap align-items-center">
+                                <div class="d-flex icon-size align-items-center justify-content-center" id="playlist">
+                                    <img src="/assets/img/plus.svg" alt="Criar playlist" class="icon-size">
+                                </div>
+                                <p class="mx-3">Criar playlist</p>
+                            </div>
+                        </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <div class="d-flex flex-nowrap">
+                                <div class="d-flex icon-size align-items-center justify-content-center gradient">
+                                    <img src="/assets/img/heart-fill.svg" alt="Criar playlist">
+                                </div>
+                                <p class="mx-3">Músicas Curtidas</p>
+                            </div>
+                        </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <div class="d-flex flex-nowrap">
+                                <div class="d-flex icon-size align-items-center justify-content-center rounded"
+                                    id="episodes">
+                                    <img src="/assets/img/broadcast.svg" alt="Criar playlist">
+                                </div>
+                                <p class="mx-3">Episódios</p>
+                            </div>
+                        </a></li>
+                </ul>
+                <hr>
+                <!-- n musicas -->
 
-    <footer>
+            </nav>
+        </header>
+        <main class=" container-fluid flex-column bg-main main-pad overflow-auto">
+            <nav class="d-flex align-items-center justify-content-between" id="topbar">
+                <!-- barra de ir/voltar -->
+                <div>
+                    <button class="buttom-type m-arrow">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="assets/img/chevron-left.svg" alt="voltar">
+                        </div>
+                    </button>
+                    <button class="buttom-type m-arrow">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="assets/img/chevron-right.svg" alt="avançar">
+                        </div>
+                    </button>
+                </div>
+
+                <!-- botao  usuario -->
+                <div class="dropdown">
+                    <button class="btn" type="button" id="button-user" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex">
+                            <img src="assets/img/user_img.png" alt="foto do usuário" id="img-size">
+                            <p class="mx-2">Rafael Steve</p>
+                            <img src="assets/img/caret.svg" alt="seta">
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="button-user">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <section>
+
+                <h2 id="greeting">Olá Steve</h2>
+                <!-- ultimas playlist/paginas acessadas -->
+                <ul class="list-unstyled d-flex flex-wrap justify-content-between gap-3">
+                    <li class="bg-dark card-h rounded">
+                        <img src="assets/img/liked-songs-640.png" alt="album" width="80px" height="80px"
+                            class="rounded-start">
+                        <a href="#" class="p-3">Musicas curtidas</a>
+                    </li>
+                    <li class="bg-dark card-h rounded">
+                        <img src="assets/img/animeOST.jpg" alt="album" width="80px" height="80px" class="rounded-start">
+                        <a href="#">AnimeOST</a>
+                    </li>
+                    <li class="bg-dark card-h rounded">
+                        <img src="assets/img/outros.jpg" alt="album" width="80px" height="80px" class="rounded-start">
+                        <a href="#" class="p-3">Outros</a>
+                    </li>
+                    <li class="bg-dark card-h rounded">
+                        <img src="assets/img/ryo_takt.jpg" alt="album" width="80px" height="80px" class="rounded-start">
+                        <a href="#" class="p-3">Ryo&lpar;supercell&rpar;</a>
+                    </li>
+                    <li class="bg-dark card-h rounded">
+                        <img src="assets/img/Flow.jpg" alt="album" width="80px" height="80px" class="rounded-start">
+                        <a href="#" class="p-3">Flow</a>
+                    </li>
+                    <li class="bg-dark card-h rounded">
+                        <img src="assets/img/zigaexperientia.jpg" alt="album" width="80px" height="80px"
+                            class="rounded-start">
+                        <a href="#" class="p-3">Zigaexperientia</a>
+                    </li>
+                    <li class="bg-dark card-h rounded">
+                        <img src="assets/img/animebr.jpg" alt="album" width="80px" height="80px" class="rounded-start">
+                        <a href="#" class="p-3">Miura Jam BR</a>
+                    </li>
+                    <li class="bg-dark card-h rounded">
+                        <img src="assets/img/aqua_timez.jpg" alt="album" width="80px" height="80px"
+                            class="rounded-start">
+                        <a href="#" class="p-3">Aqua Timez</a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3><a href="#">Seus programas</a></h3>
+                    <a href="#">ver tudo</a>
+                </div>
+                <!-- ultimos podcasts acessados -->
+                <ul class="d-flex list-unstyled justify-content-between">
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/iconicast.jpg" alt="">
+                        <a href="#">ICONICast - Arte, desenho e outras coisas nada artísticas.</a>
+                        <p>ICONIC Network</p>
+
+                    </li>
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/paciente 63.jpg" alt="">
+                        <a href="#">Paciente 63</a>
+                        <p>Spotify Studios</p>
+
+                    </li>
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/duolingo.jpg" alt="">
+                        <a href="#">Histórias em Inglês com Duolingo</a>
+                        <p>Duolingo</p>
+
+                    </li>
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/percy_jackson.jpg" alt="">
+                        <a href="#">Percy Jackson</a>
+                        <p>AudioBooks</p>
+
+                    </li>
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/nerdcast.jpg" alt="">
+                        <a href="#">NerdCast</a>
+                        <p>Jovem Nerd</p>
+
+                    </li>
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/pensandoRPG.jpg" alt="">
+                        <a href="#">Pensando RPG</a>
+                        <p>Leonardo Schabbach</p>
+
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer class="fixed-bottom bg-player border-top">
         <!-- fixo -->
-        
+
         <!-- img album -->
         <img src="#" alt="capa do album da musica" width="64px" height="64px">
         <!-- nome musica  -->
@@ -121,21 +216,23 @@
         <!-- curtir/adicionar na playlist -->
         <!-- icone -->
         <!-- player principal -->
-            <!-- aleatorio -->
-            <!-- voltar -->
-            <!-- play -->
-            <!-- avancar -->
-            <!-- aleatorio -->
-            <!-- barra de tempo -->
-        
+        <!-- aleatorio -->
+        <!-- voltar -->
+        <!-- play -->
+        <!-- avancar -->
+        <!-- aleatorio -->
+        <!-- barra de tempo -->
+
         <!-- letra(musica) -->
         <!-- fila(das proximas musicas) -->
         <!-- conectar um dispositivo -->
         <!-- volume -->
         <!-- tela cheia -->
-        
+
     </footer>
-    <script src="" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-h {
+    width: 325px;
+    height: 80px;
+}
+
+.card {
+    width: 209px;
+    height: 287px;
+}
+
+.sidebar {
+    -ms-flex: 0 0 241px;
+    flex: 0 0 241px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.min-100 {
+    min-height: 100%;
+}
+
+.dimen {
+    max-height: 100%;
+}
+
+.bg-sidebar {
+    background-color: #000000;
+}
+
+.bg-player {
+    background-color: #181818;
+}
+
+.bg-main {
+    background-color: #121212;
+}
+
+.color-line {
+    background-color: #282828;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #282828;
+}
+
+.img-size {
+    width: 20px;
+    height: 20px;
+}
+
+p {
+    margin: 0px;
+    color: #fff;
+}
+
+.icon-size {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.gradient {
+    background-image: linear-gradient(to bottom right, #4304f3, #c0ecd6);
+}
+
+#episodes {
+    background-color: #004638;
+}
+
+#playlist {
+    background-color: #b2b2b2;
+}
+
+#topbar {
+    height: 64px;
+}
+
+.buttom-type {
+    min-width: 32px;
+    min-height: 32px;
+    background-color: #00000055;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+}
+
+#button-user {
+    padding: 2px;
+    min-height: 32px;
+    background-color: #00000055;
+    border-radius: 25px;
+}
+
+#img-size {
+    max-width: 28px;
+    max-height: 28px;
+    border-radius: 50%;
+}
+
+.main-pad {
+    padding: 0px 32px;
+}
+
+.logo-margin {
+    margin-bottom: 26px;
+}
+
+.logo {
+    width: 131px;
+    height: 40px;
+}
+
+hr {
+
+    background-color: #ddd;
+    border: none;
+    width: 193px;
+    height: 1px;
+    margin: 8px 16px;
+}
+
+section {
+    padding-top: 24px;
+}
+
+#greeting {
+    margin-bottom: 22px;
+}
+
+.m-arrow {
+    margin-right: 13px;
+}
+
+.t {
+    width: 100%;
+}
+
+.card a, .card h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.img-card{
+    width: 177px;
+    height: 177px;
+    border-radius: 12px;
+}
