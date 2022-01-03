@@ -1,15 +1,29 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap');
+
+progress::-webkit-progress-bar { background: #b3b3b3; }
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    opacity: .6;
+}
 
 * {
     margin: 0px;
     padding: 0px;
-    color: #fff;
+    color: #fff !important;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
+    font-weight: 800;
 }
-
+h2{
+    font-weight: 800;
+}
 a {
     text-decoration: none;
     color: #fff;
@@ -107,7 +121,7 @@ p {
 #button-user {
     padding: 2px;
     min-height: 32px;
-    background-color: #00000055;
+    background-color: #282828;
     border-radius: 25px;
 }
 
@@ -222,4 +236,86 @@ h3 a{
 
 .item-2 ul{
     padding-top: 6px;
+}
+
+.btn-size{
+    min-width: 32px;
+    min-height: 32px;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+}
+
+.btn-size-play{
+    background-color: #fff;
+}
+
+.player{
+    height: 91px;
+    padding: 0px 16px;
+}
+
+.music-artist a{
+    font-weight: 400;
+}
+
+.artist{
+    font-size: 11px;
+}
+
+.player-control{
+    margin-bottom: 12px;
+}
+
+.player-size{
+    width: 100%;
+}
+
+.progress{
+    height: 4px;
+    border-radius: 4px;
+    background-color: #535353;
+}
+
+.progress-bar{
+    width: 10%;
+     
+}
+
+.player-space{
+    width: 40%;
+}
+.adjacent{
+    width: 30%;
+    /* width: 24.5%; */
+}
+
+.border-top{
+    border-top: 1px solid #282828 !important;
+}
+
+.vol-bar{
+width: 93px;
+}
+
+.vol{
+    
+    width: 100%;
+}
+
+.bar-text p{
+    font-size: 11px;
+    font-weight: 200;
+}
+
+.dropdown-menu{
+    background-color: #282828;
+    padding: 4px;
+}
+
+.dropdown-item{
+    width: 188px;
+    height: 40px;
+    font-weight: 800;
 }
