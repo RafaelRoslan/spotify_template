@@ -14,58 +14,64 @@
 
 <body>
     <div class="d-flex h-100">
-        <header class="p-2 sidebar bg-sidebar">
-            <nav class="d-flex navbar py-3">
+        <header class="sidebar bg-sidebar">
+            <nav class="d-flex navbar">
                 <!-- LOGO Spotify -->
-                <a href="#" class="d-flex logo-margin px-2">
-                    <img src="assets/img/logo.svg" alt="logo" class="logo mx-2">
+                <a href="#" class="d-flex logo-margin">
+                    <img src="assets/img/logo.svg" alt="logo" class="logo">
 
                 </a>
-                <ul class="nav nav-pills flex-grow-1 flex-column mb-4">
-                    <li class="nav-item"><a href="#" class="nav-link active">
-                            <div class="d-flex flex-nowrap">
+                <ul class="nav nav-pills flex-grow-1 flex-column n-principal">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active d-flex flex-nowrap align-items-center">
+                            
                                 <img src="assets/img/house-door-fill.svg" alt="home/inicio" class="icon-size">
-                                <p class="mx-3">Início</p>
-                            </div>
-                        </a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">
-                            <div class="d-flex flex-nowrap">
+                                <p class="">Início</p>
+                           
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex flex-nowrap align-items-center">
+                            
                                 <img src="assets/img/search.svg" alt="home/inicio" class="icon-size">
-                                <p class="mx-3">Buscar</p>
-                            </div>
-                        </a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">
-                            <div class="d-flex flex-nowrap">
+                                <p class="">Buscar</p>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex flex-nowrap align-items-center">
+                            
                                 <img src="assets/img/book.svg" alt="home/inicio" class="icon-size">
-                                <p class="mx-3">Sua Biblioteca</p>
-                            </div>
-                        </a></li>
+                                <p class="">Sua Biblioteca</p>
+                           
+                        </a>
+                    </li>
                 </ul>
                 <!-- espaço vazio -->
-                <ul class="nav nav-pills flex-grow-1 flex-column">
+                <ul class="nav nav-pills flex-grow-1 flex-column n-secondary">
                     <li class="nav-item"><a href="#" class="nav-link">
                             <div class="d-flex flex-nowrap align-items-center">
-                                <div class="d-flex icon-size align-items-center justify-content-center" id="playlist">
+                                <div class="d-flex icon-size align-items-center justify-content-center icon-margin" id="playlist">
                                     <img src="/assets/img/plus.svg" alt="Criar playlist" class="icon-size">
                                 </div>
-                                <p class="mx-3">Criar playlist</p>
+                                <p>Criar playlist</p>
                             </div>
                         </a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">
+                    <li class="nav-item"><a href="#" class="nav-link mini-p">
                             <div class="d-flex flex-nowrap">
-                                <div class="d-flex icon-size align-items-center justify-content-center gradient">
+                                <div class="d-flex icon-size align-items-center justify-content-center gradient icon-margin">
                                     <img src="/assets/img/heart-fill.svg" alt="Criar playlist">
                                 </div>
-                                <p class="mx-3">Músicas Curtidas</p>
+                                <p>Músicas Curtidas</p>
                             </div>
                         </a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">
+                    <li class="nav-item"><a href="#" class="nav-link mini-p">
                             <div class="d-flex flex-nowrap">
-                                <div class="d-flex icon-size align-items-center justify-content-center rounded"
+                                <div class="d-flex icon-size align-items-center justify-content-center rounded icon-margin"
                                     id="episodes">
                                     <img src="/assets/img/broadcast.svg" alt="Criar playlist">
                                 </div>
-                                <p class="mx-3">Episódios</p>
+                                <p>Seus episódios</p>
                             </div>
                         </a></li>
                 </ul>
@@ -151,10 +157,62 @@
 
             </section>
 
-            <section>
-                <div class="d-flex justify-content-between align-items-center">
+            <section class="item-2">
+                <div class="d-flex justify-content-between align-items-center title-item">
                     <h3><a href="#">Seus programas</a></h3>
-                    <a href="#">ver tudo</a>
+                    <a  class="see-all" href="#">ver tudo</a>
+                </div>
+                <!-- ultimos podcasts acessados -->
+                <ul class="d-flex list-unstyled justify-content-between">
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/iconicast.jpg" alt="">
+                        <a href="#">ICONICast - Arte, desenho e outras coisas nada artísticas.</a>
+                        <p>ICONIC Network</p>
+
+                    </li>
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/paciente 63.jpg" alt="">
+                        <a href="#">Paciente 63</a>
+                        <p>Spotify Studios</p>
+
+                    </li>
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/duolingo.jpg" alt="">
+                        <a href="#">Histórias em Inglês com Duolingo</a>
+                        <p>Duolingo</p>
+
+                    </li>
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/percy_jackson.jpg" alt="">
+                        <a href="#">Percy Jackson</a>
+                        <p>AudioBooks</p>
+
+                    </li>
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/nerdcast.jpg" alt="">
+                        <a href="#">NerdCast</a>
+                        <p>Jovem Nerd</p>
+
+                    </li>
+                    <li class="bg-dark flex-column card p-3">
+
+                        <img class="mb-3 img-card" src="assets/img/pensandoRPG.jpg" alt="">
+                        <a href="#">Pensando RPG</a>
+                        <p>Leonardo Schabbach</p>
+
+                    </li>
+                </ul>
+            </section>
+
+            <section class="item-2">
+                <div class="d-flex justify-content-between align-items-center title-item">
+                    <h3><a href="#">Tocado recentemente</a></h3>
+                    <a class="see-all" href="#">ver tudo</a>
                 </div>
                 <!-- ultimos podcasts acessados -->
                 <ul class="d-flex list-unstyled justify-content-between">
