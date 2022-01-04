@@ -1,43 +1,70 @@
 @charset "UTF-8";
 
+/* -----fonte-----*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap');
 
+/* -----webkit-----*/
 progress::-webkit-progress-bar { background: #b3b3b3; }
 
 ::-webkit-scrollbar{
     width: 12px;
+    z-index: 2;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #fff;
-    opacity: .6;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(255, 255, 255, 0.65);  
+}
+
+/* -----geral-----*/
 * {
     margin: 0px;
     padding: 0px;
-    color: #fff !important;
+    color: #fff;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
     font-weight: 800;
 }
+
+/* -----cores-----*/
+
+.color-1{background-color: #000000;}
+.color-2{background-color: #121212;}
+.color-3{background-color: #181818;}
+.color-4{background-color: #282828;}
+
+
 h2{
     font-weight: 800;
 }
-a {
+a, p, footer button img, .dropdown-item{
     text-decoration: none;
     color: #fff;
+    opacity: 0.75;
 }
 
+
+p {
+    margin: 0px;
+}
+
+.active, .logo-margin, .music, .title, .item-2 ul li a, .btn-size-play img{
+    opacity: 1;
+}
 
 .card-h {
     width: 325px;
     height: 80px;
+    background-color: #ffffff22;
 }
 
 .card {
     width: 209px;
     height: 287px;
+    background-color: #ffffff22;
 }
 
 .sidebar {
@@ -45,47 +72,25 @@ a {
     flex: 0 0 241px;
 }
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
-.min-100 {
-    min-height: 100%;
-}
-
-.dimen {
-    max-height: 100%;
-}
-
-.bg-sidebar {
+.app{
+    border: none;
     background-color: #000000;
+    width: 100%;
+    height: 32px;
+    padding: 0px 24px;
 }
 
-.bg-player {
-    background-color: #181818;
+.app p{
+    font-weight: 400;
 }
 
-.bg-main {
-    background-color: #121212;
-}
-
-.color-line {
-    background-color: #282828;
-}
 
 .nav-pills .nav-link.active {
     background-color: #282828;
-}
-
-.img-size {
-    width: 20px;
-    height: 20px;
-}
-
-p {
-    margin: 0px;
-    color: #fff;
 }
 
 .icon-size {
@@ -97,31 +102,32 @@ p {
     background-image: linear-gradient(to bottom right, #4304f3, #c0ecd6);
 }
 
-#episodes {
-    background-color: #004638;
-}
+#episodes {background-color: #004638;}
 
-#playlist {
-    background-color: #b2b2b2;
-}
+#playlist {background-color: #b2b2b2;}
 
-#topbar {
-    height: 64px;
-}
+#topbar {height: 64px;}
 
-.buttom-type {
+.buttom-type, .buttom-type-2 {
     min-width: 32px;
     min-height: 32px;
-    background-color: #00000055;
     text-align: center;
     border: none;
     border-radius: 50%;
 }
 
+.buttom-type{
+    background-color: #00000055;
+}
+
+.buttom-type-2{
+    background-color: #00000077;
+}
+
 #button-user {
     padding: 2px;
     min-height: 32px;
-    background-color: #282828;
+    background-color: #0a051b;
     border-radius: 25px;
 }
 
@@ -133,6 +139,7 @@ p {
 
 .main-pad {
     padding: 0px 32px;
+    position: relative;
 }
 
 .logo-margin {
@@ -167,10 +174,6 @@ hr {
     margin-right: 13px;
 }
 
-.t {
-    width: 100%;
-}
-
 .card a, .card h5 {
     white-space: nowrap;
     overflow: hidden;
@@ -200,14 +203,23 @@ hr {
 
 .n-secondary{
     margin-top: 24px;
-}
-
-.n-secondary{
     padding: 0px 24px;    
 }
 
 .n-secondary a{
     padding: 8px 0px;    
+}
+
+.n-tertiary{
+    padding: 0px 24px;
+}
+.n-tertiary a{
+    height: 32px;
+    padding: 0px 0px;
+}
+
+.n-tertiary a p{
+    font-weight: 400;
 }
 
 .mini-p p{
@@ -260,7 +272,7 @@ h3 a{
     font-weight: 400;
 }
 
-.artist{
+.artist, .bar-text p{
     font-size: 11px;
 }
 
@@ -305,7 +317,6 @@ width: 93px;
 }
 
 .bar-text p{
-    font-size: 11px;
     font-weight: 200;
 }
 
@@ -318,4 +329,26 @@ width: 93px;
     width: 188px;
     height: 40px;
     font-weight: 800;
+}
+
+.gradient-effect{
+    height: 332px;
+    width: calc(100% - 253px);
+    position: absolute; 
+    z-index: 0;
+    background-image:linear-gradient(#5028f0,transparent);
+    opacity: 0.35;
+}
+
+.li-hover a:hover{
+    color: #fff;
+}
+
+.h-link:hover{
+    color: #fff;
+    opacity: 1;
+}
+
+.li-hover:hover{
+    background-color: #ffffff55;
 }
