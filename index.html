@@ -8,37 +8,35 @@
     <title>Spotify Template</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="d-flex h-100">
-        <header class="sidebar color-1">
-            <nav class="d-flex navbar">
+        <header class="sidebar-menu">
+            <nav class="d-flex navbar p-0">
                 <!-- LOGO Spotify -->
-                <a href="#" class="d-flex logo-margin">
-                    <img src="assets/img/logo.svg" alt="logo" class="logo">
-
-                </a>
+                <div class="logo flex-grow-1">
+                    <a href="#"><img src="assets/img/logo.svg" alt="logo"></a>
+                </div>
                 <!-- opções pricipais -->
-                <ul class="nav nav-pills flex-grow-1 flex-column n-principal">
+                <ul class="nav nav-pills flex-grow-1 flex-column">
                     <li class="nav-item">
                         <a href="#" class="nav-link active d-flex flex-nowrap align-items-center">
-                            <img src="assets/img/house-door-fill.svg" alt="home/inicio" class="icon-size">
+                            <img src="assets/img/house-door-fill.svg" alt="home/inicio">
                             <p class="title">Início</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex flex-nowrap align-items-center h-link">
+                        <a href="#" class="nav-link d-flex flex-nowrap align-items-center">
 
-                            <img src="assets/img/search.svg" alt="home/inicio" class="icon-size">
+                            <img src="assets/img/search.svg" alt="home/inicio">
                             <p>Buscar</p>
 
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex flex-nowrap align-items-center h-link">
+                        <a href="#" class="nav-link d-flex flex-nowrap align-items-center">
 
                             <img src="assets/img/book.svg" alt="home/inicio" class="icon-size">
                             <p>Sua Biblioteca</p>
@@ -48,7 +46,7 @@
                 </ul>
 
                 <!-- opções secundarias -->
-                <ul class="nav nav-pills flex-grow-1 flex-column n-secondary">
+                <ul class="nav nav-pills flex-grow-1 flex-column">
                     <li class="nav-item">
                         <a href="#" class="nav-link h-link">
                             <div class="d-flex flex-nowrap align-items-center ">
@@ -86,27 +84,35 @@
                 <!--musicas -->
                 <ul class="nav nav-pills flex-grow-1 flex-column n-tertiary">
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex align-items-center"><p>Faixas do Shazam</p></a>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <p>Faixas do Shazam</p>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex align-items-center"><p>Aquela Fé</p></a>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <p>Aquela Fé</p>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex align-items-center"><p>Takt</p></a>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <p>Takt</p>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex align-items-center"><p>Wind</p></a>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <p>Wind</p>
+                        </a>
                     </li>
                 </ul>
 
                 <button class="app d-flex align-items-center">
-                    <img  src="assets/img/arrow-down-circle.svg" alt="baixar">
+                    <img src="assets/img/arrow-down-circle.svg" alt="baixar">
                     <p class="p-2">Instalar aplicativo</p>
                 </button>
             </nav>
         </header>
         <main class=" container-fluid p-0 flex-column color-2 overflow-auto">
-            <div class="gradient-effect"></div>
+            <!-- <div class="gradient-effect"></div> -->
             <div class="main-pad">
                 <nav class="d-flex align-items-center justify-content-between" id="topbar">
                     <!-- barra de ir/voltar -->
@@ -250,100 +256,101 @@
                 <div style="height: 100px;"></div>
             </div>
         </main>
+        <footer class="fixed-bottom color-3 border-top d-flex align-items-center justify-content-between player">
+
+            <!-- img album -->
+            <div class="d-flex flex-fill adjacent">
+                <img src="assets/img/Flow.jpg" alt="capa do album da musica" width="56px" height="56px">
+                <div class="d-flex flex-column mx-3 justify-content-center music-artist">
+                    <!-- nome musica  -->
+                    <a class="music" href="#">COLORS</a>
+                    <!-- nome banda/musico -->
+                    <a class="artist" href="#">FLOW</a>
+                </div>
+                <!-- curtir/adicionar na playlist -->
+                <button class="btn-size">
+                    <img src="assets/img/heart.svg" alt="curtir">
+                </button>
+                <!-- display -->
+                <button class="btn-size">
+                    <img src="assets/img/pip.svg" alt="display">
+                </button>
+            </div>
+            <!-- player principal -->
+            <div class="d-flex flex-fill justify-content-center player-space">
+                <div class="d-flex flex-column player-size">
+                    <!-- player controle -->
+                    <div class="player-control">
+                        <div class="d-flex justify-content-center">
+                            <div class="">
+                                <!-- aleatorio -->
+                                <button class="btn-size">
+                                    <img src="assets/img/shuffle.svg" alt="aleatório">
+                                </button>
+                                <!-- voltar -->
+                                <button class="btn-size">
+                                    <img src="assets/img/skip-start-fill.svg" alt="voltar">
+                                </button>
+                            </div>
+                            <!-- play -->
+                            <button class="btn-size btn-size-play">
+                                <img src="assets/img/play-fill.svg" alt="play">
+                            </button>
+                            <div>
+                                <!-- avancar -->
+                                <button class="btn-size">
+                                    <img src="assets/img/skip-end-fill.svg" alt="avançar">
+                                </button>
+                                <!-- repetir/loop -->
+                                <button class="btn-size">
+                                    <img src="assets/img/arrow-repeat.svg" alt="repetir">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- barra de tempo/progresso -->
+                    <div class="d-flex justify-content-between align-items-center bar-text">
+                        <p>0:00</p>
+                        <div class="d-flex flex-fill progress mx-3">
+                            <progress class="progress-bar"></progress>
+                        </div>
+                        <p>3:00</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- menu secundário -->
+            <div class="d-flex flex-fill justify-content-end align-items-center adjacent">
+                <!-- letra(musica) -->
+                <button class="btn-size">
+                    <img src="assets/img/file-earmark-music.svg" alt="letra">
+                </button>
+                <!-- fila(das proximas musicas) -->
+                <button class="btn-size">
+                    <img src="assets/img/music-note-list.svg" alt="fila">
+                    <!-- conectar um dispositivo -->
+                </button>
+                <button class="btn-size">
+                    <img src="assets/img/tv.svg" alt="Conectar um dispositivo">
+                </button>
+                <!-- volume -->
+                <button class="btn-size">
+                    <img src="assets/img/volume-up.svg" alt="volume">
+                </button>
+                <div class="progress vol-bar">
+                    <progress class="progress-bar vol"></progress>
+                </div>
+
+                <!-- tela cheia -->
+                <button class="btn-size">
+                    <img src="assets/img/arrows-angle-expand.svg" alt="Tela cheia">
+                </button>
+            </div>
+
+        </footer>
     </div>
-    <footer class="fixed-bottom color-3 border-top d-flex align-items-center justify-content-between player">
 
-        <!-- img album -->
-        <div class="d-flex flex-fill adjacent">
-            <img src="assets/img/Flow.jpg" alt="capa do album da musica" width="56px" height="56px">
-            <div class="d-flex flex-column mx-3 justify-content-center music-artist">
-                <!-- nome musica  -->
-                <a class="music" href="#">COLORS</a>
-                <!-- nome banda/musico -->
-                <a class="artist" href="#">FLOW</a>
-            </div>
-            <!-- curtir/adicionar na playlist -->
-            <button class="btn-size">
-                <img src="assets/img/heart.svg" alt="curtir">
-            </button>
-            <!-- display -->
-            <button class="btn-size">
-                <img src="assets/img/pip.svg" alt="display">
-            </button>
-        </div>
-        <!-- player principal -->
-        <div class="d-flex flex-fill justify-content-center player-space">
-            <div class="d-flex flex-column player-size">
-                <!-- player controle -->
-                <div class="player-control">
-                    <div class="d-flex justify-content-center">
-                        <div class="">
-                            <!-- aleatorio -->
-                            <button class="btn-size">
-                                <img src="assets/img/shuffle.svg" alt="aleatório">
-                            </button>
-                            <!-- voltar -->
-                            <button class="btn-size">
-                                <img src="assets/img/skip-start-fill.svg" alt="voltar">
-                            </button>
-                        </div>
-                        <!-- play -->
-                        <button class="btn-size btn-size-play">
-                            <img src="assets/img/play-fill.svg" alt="play">
-                        </button>
-                        <div>
-                            <!-- avancar -->
-                            <button class="btn-size">
-                                <img src="assets/img/skip-end-fill.svg" alt="avançar">
-                            </button>
-                            <!-- repetir/loop -->
-                            <button class="btn-size">
-                                <img src="assets/img/arrow-repeat.svg" alt="repetir">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- barra de tempo/progresso -->
-                <div class="d-flex justify-content-between align-items-center bar-text">
-                    <p>0:00</p>
-                    <div class="d-flex flex-fill progress mx-3">
-                        <progress class="progress-bar"></progress>
-                    </div>
-                    <p>3:00</p>
-                </div>
-            </div>
-
-
-        </div>
-        <!-- menu secundário -->
-        <div class="d-flex flex-fill justify-content-end align-items-center adjacent">
-            <!-- letra(musica) -->
-            <button class="btn-size">
-                <img src="assets/img/file-earmark-music.svg" alt="letra">
-            </button>
-            <!-- fila(das proximas musicas) -->
-            <button class="btn-size">
-                <img src="assets/img/music-note-list.svg" alt="fila">
-                <!-- conectar um dispositivo -->
-            </button>
-            <button class="btn-size">
-                <img src="assets/img/tv.svg" alt="Conectar um dispositivo">
-            </button>
-            <!-- volume -->
-            <button class="btn-size">
-                <img src="assets/img/volume-up.svg" alt="volume">
-            </button>
-            <div class="progress vol-bar">
-                <progress class="progress-bar vol"></progress>
-            </div>
-
-            <!-- tela cheia -->
-            <button class="btn-size">
-                <img src="assets/img/arrows-angle-expand.svg" alt="Tela cheia">
-            </button>
-        </div>
-
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

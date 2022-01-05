@@ -6,18 +6,9 @@
 /* -----webkit-----*/
 progress::-webkit-progress-bar { background: #b3b3b3; }
 
-::-webkit-scrollbar{
-    width: 12px;
-    z-index: 2;
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(255, 255, 255, 0.65);  
-}
+::-webkit-scrollbar{width: 12px;}
+::-webkit-scrollbar-thumb{background-color: rgba(255, 255, 255, 0.4);}
+::-webkit-scrollbar-thumb:hover{background-color: rgba(255, 255, 255, 0.65);}
 
 /* -----geral-----*/
 * {
@@ -28,9 +19,42 @@ progress::-webkit-progress-bar { background: #b3b3b3; }
     font-size: 14px;
     font-weight: 800;
 }
+/* reset */
+p, a{
+    margin: 0px;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.sidebar-menu{
+    min-width: 241px;
+    max-width: 241px;
+    height: calc(100%-91px);
+    background-color: #000000;
+    padding-top: 24px;
+}
+
+.logo{
+    margin-bottom: 26px;
+    padding: 0px 24px;
+}
+
+.navbar ul li{padding: 0px 8px;}
+.navbar ul li a{
+    padding: 0px 16px;
+    height: 40px;}
+.navbar ul li img{
+    margin-right: 16px;
+}
+
 
 /* -----cores-----*/
-
+/* 
 .color-1{background-color: #000000;}
 .color-2{background-color: #121212;}
 .color-3{background-color: #181818;}
@@ -70,10 +94,6 @@ p {
 .sidebar {
     -ms-flex: 0 0 241px;
     flex: 0 0 241px;
-}
-
-html, body {
-    height: 100%;
 }
 
 .app{
@@ -142,15 +162,7 @@ html, body {
     position: relative;
 }
 
-.logo-margin {
-    margin-bottom: 26px;
-    padding: 0px 24px;
-}
 
-.logo {
-    width: 131px;
-    height: 40px;
-}
 
 hr {
 
@@ -300,7 +312,7 @@ h3 a{
 }
 .adjacent{
     width: 30%;
-    /* width: 24.5%; */
+     width: 24.5%;
 }
 
 .border-top{
@@ -351,4 +363,4 @@ width: 93px;
 
 .li-hover:hover{
     background-color: #ffffff55;
-}
+} */
