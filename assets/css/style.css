@@ -29,12 +29,26 @@ html, body{
     height: 100%;
 }
 
+hr {
+    background-color: #ddd;
+    border: none;
+    height: 1px;
+    margin: 8px 24px 0px 24px;
+}
+
+section{
+    margin-bottom: 16px;
+}
 
 
+.main-size{
+    height: calc(100vh - 91px);
+}
+
+/* ------------------------sidebar------------------------- */
 .sidebar-menu{
     min-width: 241px;
     max-width: 241px;
-    height: calc(100%-91px);
     background-color: #000000;
     padding-top: 24px;
 }
@@ -45,21 +59,117 @@ html, body{
 }
 
 .navbar ul li{padding: 0px 8px;}
-.navbar ul li a{
+
+#sidebar-ul-1 li a{
     padding: 0px 16px;
     height: 40px;}
-.navbar ul li img{
+.img-margin{margin-right: 16px;}
+
+#sidebar-ul-2{ margin-top: 24px;}
+#sidebar-ul-2 li a{ padding: 8px 16px;}
+
+
+#playlist {background-color: #b2b2b2;}
+#gradient {background-image: linear-gradient(to bottom right, #4304f3, #c0ecd6);}
+#episodes {background-color: #004638;}
+
+#playlist, #gradient, #episodes{
+    width: 24px;
+    height: 24px;
+}
+
+#sidebar-musics{
+    margin: 0px;
+    padding-top: 8px;
+    height: calc(100vh - 494px);
+}
+
+#sidebar-musics li{height: 32px;}
+#sidebar-musics li a{
+    height: 32px;
+    padding: 0px 16px;
+}
+
+.navbar button{
+    height: 40px;
+    padding: 0px 24px;
+    border: none;
+    background-color: #000000;
+    gap: 16px;
+}
+
+.navbar button img{
+    padding-right: 4px;
+}
+/* -------------------------------------------------------------------- */
+
+/* -----------------------------Main----------------------------------- */
+
+.main-content{
+    padding: 0px 32px;
+    background-color    : #121212;
+}
+#topbar {height: 64px;}
+
+.arrows button{
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+}
+
+.arrows button{
     margin-right: 16px;
+    background-color: #00000077;;
 }
 
 
-/* -----cores-----*/
-/* 
-.color-1{background-color: #000000;}
-.color-2{background-color: #121212;}
-.color-3{background-color: #181818;}
-.color-4{background-color: #282828;}
+#button-user {
+    padding: 2px;
+    height: 32px;
+    background-color: #00000077;
+    border-radius: 25px;
+}
 
+#button-user img{
+    max-width: 28px;
+    max-height: 28px;
+    border-radius: 50%;
+}
+
+.dropdown-menu{
+    background-color: #282828;
+    padding: 4px;
+}
+
+.dropdown-item{
+    width: 188px;
+    height: 40px;
+}
+
+.content{
+    padding-top: 24px;
+    gap: 24px;
+}
+
+#greeting {margin-bottom: 16px;}
+
+.content section ul{
+    grid-auto-flow: row;
+    
+    overflow-y: hidden;
+}
+
+.content section ul li{
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 250px;
+    max-width: 1000px;
+    height: 80px;
+}
+
+
+/* 
 
 h2{
     font-weight: 800;
@@ -118,15 +228,6 @@ p {
     min-height: 24px;
 }
 
-.gradient {
-    background-image: linear-gradient(to bottom right, #4304f3, #c0ecd6);
-}
-
-#episodes {background-color: #004638;}
-
-#playlist {background-color: #b2b2b2;}
-
-#topbar {height: 64px;}
 
 .buttom-type, .buttom-type-2 {
     min-width: 32px;
@@ -144,43 +245,14 @@ p {
     background-color: #00000077;
 }
 
-#button-user {
-    padding: 2px;
-    min-height: 32px;
-    background-color: #0a051b;
-    border-radius: 25px;
-}
-
 #img-size {
-    max-width: 28px;
-    max-height: 28px;
-    border-radius: 50%;
-}
 
-.main-pad {
-    padding: 0px 32px;
-    position: relative;
-}
-
-
-
-hr {
-
-    background-color: #ddd;
-    border: none;
-    width: 193px;
-    height: 1px;
-    margin: 8px 24px;
 }
 
 .navbar, section{
     padding-top: 24px;
 }
 
-#greeting {
-    margin-bottom: 22px;
-    font-size: 32px;
-}
 
 .m-arrow {
     margin-right: 13px;
@@ -332,14 +404,9 @@ width: 93px;
     font-weight: 200;
 }
 
-.dropdown-menu{
-    background-color: #282828;
-    padding: 4px;
-}
 
-.dropdown-item{
-    width: 188px;
-    height: 40px;
+
+
     font-weight: 800;
 }
 

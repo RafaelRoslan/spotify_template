@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="d-flex h-100">
+    <div class="d-flex main-size">
         <header class="sidebar-menu">
             <nav class="d-flex navbar p-0">
                 <!-- LOGO Spotify -->
@@ -20,69 +20,75 @@
                     <a href="#"><img src="assets/img/logo.svg" alt="logo"></a>
                 </div>
                 <!-- opções pricipais -->
-                <ul class="nav nav-pills flex-grow-1 flex-column">
+                <ul class="nav nav-pills flex-grow-1 flex-column" id="sidebar-ul-1">
                     <li class="nav-item">
                         <a href="#" class="nav-link active d-flex flex-nowrap align-items-center">
-                            <img src="assets/img/house-door-fill.svg" alt="home/inicio">
-                            <p class="title">Início</p>
+                            <div class="img-margin">
+                                <img src="assets/img/house-door-fill.svg" alt="home/inicio">
+                            </div>
+                            <p>Início</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link d-flex flex-nowrap align-items-center">
-
-                            <img src="assets/img/search.svg" alt="home/inicio">
+                            <div class="img-margin">
+                                <img src="assets/img/search.svg" alt="home/inicio">
+                            </div>
                             <p>Buscar</p>
-
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link d-flex flex-nowrap align-items-center">
-
-                            <img src="assets/img/book.svg" alt="home/inicio" class="icon-size">
+                            <div class="img-margin">
+                                <img src="assets/img/book.svg" alt="home/inicio" class="icon-size">
+                            </div>
                             <p>Sua Biblioteca</p>
-
                         </a>
                     </li>
                 </ul>
 
                 <!-- opções secundarias -->
-                <ul class="nav nav-pills flex-grow-1 flex-column">
+                <ul class="nav nav-pills flex-grow-1 flex-column" id="sidebar-ul-2">
                     <li class="nav-item">
-                        <a href="#" class="nav-link h-link">
-                            <div class="d-flex flex-nowrap align-items-center ">
-                                <div class="d-flex align-items-center justify-content-center icon-margin" id="playlist">
-                                    <img src="/assets/img/plus.svg" alt="Criar playlist" class="icon-size">
-                                </div>
-                                <p>Criar playlist</p>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <div class="img-margin d-flex align-items-center justify-content-center" id="playlist">
+                                <img src="/assets/img/plus.svg" alt="Criar playlist">
                             </div>
+                            <p>Criar playlist</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link mini-p h-link">
-                            <div class="d-flex flex-nowrap">
-                                <div
-                                    class="d-flex icon-size align-items-center justify-content-center gradient icon-margin">
-                                    <img src="/assets/img/heart-fill.svg" alt="Criar playlist">
-                                </div>
-                                <p>Músicas Curtidas</p>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <div class="img-margin d-flex align-items-center justify-content-center" id="gradient">
+                                <img src="/assets/img/heart-fill.svg" alt="Criar playlist">
                             </div>
+                            <p>Músicas Curtidas</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link mini-p h-link">
-                            <div class="d-flex flex-nowrap">
-                                <div class="d-flex icon-size align-items-center justify-content-center rounded icon-margin"
-                                    id="episodes">
-                                    <img src="/assets/img/broadcast.svg" alt="Criar playlist">
-                                </div>
-                                <p>Seus episódios</p>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <div class="img-margin d-flex align-items-center justify-content-center rounded"
+                                id="episodes">
+                                <img src="/assets/img/broadcast.svg" alt="Criar playlist">
                             </div>
+                            <p>Seus episódios</p>
                         </a>
                     </li>
                 </ul>
-                <hr>
+                <!-- separador -->
+                <hr class="w-100">
                 <!--musicas -->
-                <ul class="nav nav-pills flex-grow-1 flex-column n-tertiary">
+                <ul class="list-unstyled flex-column overflow-auto flex-grow-1" id="sidebar-musics">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <p class="text-truncate">Faixas do Shazam dkasdhahsdahs</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <p>Faixas do Shazam</p>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link d-flex align-items-center">
                             <p>Faixas do Shazam</p>
@@ -105,252 +111,200 @@
                     </li>
                 </ul>
 
-                <button class="app d-flex align-items-center">
+                <button class="d-flex align-items-center w-100">
                     <img src="assets/img/arrow-down-circle.svg" alt="baixar">
-                    <p class="p-2">Instalar aplicativo</p>
+                    <p>Instalar aplicativo</p>
                 </button>
             </nav>
         </header>
-        <main class=" container-fluid p-0 flex-column color-2 overflow-auto">
-            <!-- <div class="gradient-effect"></div> -->
-            <div class="main-pad">
+
+        <main class=" container-fluid p-0 flex-column overflow-auto">          
+            <div class="main-content">
                 <nav class="d-flex align-items-center justify-content-between" id="topbar">
                     <!-- barra de ir/voltar -->
-                    <div>
-                        <button class="buttom-type-2 m-arrow">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <img src="assets/img/chevron-left.svg" alt="voltar">
-                            </div>
+                    <div class="arrows d-flex">
+                        <button class="d-flex align-items-center justify-content-center">
+                            <img src="assets/img/chevron-left.svg" alt="voltar">
                         </button>
-                        <button class="buttom-type-2 m-arrow">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <img src="assets/img/chevron-right.svg" alt="avançar">
-                            </div>
+                        <button class="d-flex align-items-center justify-content-center">
+                            <img src="assets/img/chevron-right.svg" alt="avançar">
                         </button>
                     </div>
 
                     <!-- botao  usuario -->
                     <div class="dropdown">
-                        <button class="btn" type="button" id="button-user" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/user_img.png" alt="foto do usuário" id="img-size">
-                                <p class="mx-2 title">Rafael Steve</p>
-                                <img class="me-2" src="assets/img/caret.svg" alt="seta">
-                            </div>
+                        <button class="btn d-flex align-items-center" type="button" id="button-user"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/user_img.png" alt="foto do usuário">
+                            <p class="mx-2 title">Rafael Steve</p>
+                            <img class="me-2" src="assets/img/caret.svg" alt="seta">
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="button-user">
-                            <li><a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
                                     <p class="title">Conta</p>
                                     <img src="assets/img/box-arrow-up-right.svg" alt="conta">
-                                </a></li>
+                                </a>
+                            </li>
                             <li><a class="dropdown-item d-flex align-items-center" href="#">Perfil</a></li>
                             <li><a class="dropdown-item d-flex align-items-center" href="#">Sair</a></li>
                         </ul>
                     </div>
 
                 </nav>
+                <div class="content d-grid">
+                    <!-- <div class="gradient-effect"></div> -->
+                    <!-- recentes -->
+                    <section>
 
-                <!-- recentes -->
-                <section>
+                        <h2 id="greeting">Olá Steve</h2>
+                        <!-- ultimas playlist/paginas acessadas -->
 
-                    <h2 id="greeting">Olá Steve</h2>
-                    <!-- ultimas playlist/paginas acessadas -->
-                    <ul class="list-unstyled d-flex flex-wrap justify-content-between gap-3">
-                        <li class="card-h rounded li-hover">
-                            <img src="assets/img/liked-songs-640.png" alt="album" width="80px" height="80px"
-                                class="rounded-start">
-                            <a href="#" class="p-3 title">Musicas curtidas</a>
-                        </li>
-                        <li class="card-h rounded li-hover">
-                            <img src="assets/img/animeOST.jpg" alt="album" width="80px" height="80px"
-                                class="rounded-start">
-                            <a href="#" class="p-3 title">AnimeOST</a>
-                        </li>
-                        <li class="card-h rounded d-none d-lg-block  li-hover">
-                            <img src="assets/img/outros.jpg" alt="album" width="80px" height="80px"
-                                class="rounded-start">
-                            <a href="#" class="p-3 title">Outros</a>
-                        </li>
-                        <li class="card-h rounded d-none d-lg-block  li-hover">
-                            <img src="assets/img/ryo_takt.jpg" alt="album" width="80px" height="80px"
-                                class="rounded-start">
-                            <a href="#" class="p-3 title">Ryo&lpar;supercell&rpar;</a>
-                        </li>
-                        <li class="card-h rounded d-none d-lg-block  li-hover">
-                            <img src="assets/img/Flow.jpg" alt="album" width="80px" height="80px" class="rounded-start">
-                            <a href="#" class="p-3 title">Flow</a>
-                        </li>
-                        <li class="card-h rounded d-none d-lg-block  li-hover">
-                            <img src="assets/img/zigaexperientia.jpg" alt="album" width="80px" height="80px"
-                                class="rounded-start">
-                            <a href="#" class="p-3 title">Zigaexperientia</a>
-                        </li>
-                        <li class="card-h rounded d-none d-lg-block d-xl-none  li-hover">
-                            <img src="assets/img/animebr.jpg" alt="album" width="80px" height="80px"
-                                class="rounded-start">
-                            <a href="#" class="p-3 title">Miura Jam BR</a>
-                        </li>
-                        <li class="card-h rounded d-none d-lg-block d-xl-none li-hover">
-                            <img src="assets/img/aqua_timez.jpg" alt="album" width="80px" height="80px"
-                                class="rounded-start">
-                            <a href="#" class="p-3 title">Aqua Timez</a>
-                        </li>
-                    </ul>
+                        <ul class="list-unstyled row gap-3 row-cols-12">
+                            <li class="rounded d-flex p-0">
+                                <img src="assets/img/liked-songs-640.png" alt="album" width="80px" height="80px"
+                                    class="rounded-start">
+                                <a href="#" class="p-3 title">Musicas curtidas</a>
+                            </li>
+                            <li class="col rounded d-flex p-0">
+                                <img src="assets/img/animeOST.jpg" alt="album" width="80px" height="80px"
+                                    class="rounded-start">
+                                <a href="#" class="p-3 title">AnimeOST</a>
+                            </li>
+                            <li class="col rounded d-flex p-0">
+                                <img src="assets/img/outros.jpg" alt="album" width="80px" height="80px"
+                                    class="rounded-start">
+                                <a href="#" class="p-3 title">Outros</a>
+                            </li>
+                            <li class="col rounded d-flex p-0">
+                                <img src="assets/img/ryo_takt.jpg" alt="album" width="80px" height="80px"
+                                    class="rounded-start">
+                                <a href="#" class="p-3 title">Ryo&lpar;supercell&rpar;</a>
+                            </li>
+                            <li class="col rounded d-flex p-0">
+                                <img src="assets/img/Flow.jpg" alt="album" width="80px" height="80px"
+                                    class="rounded-start">
+                                <a href="#" class="p-3 title">Flow</a>
+                            </li>
+                            <li class="col rounded d-flex p-0">
+                                <img src="assets/img/zigaexperientia.jpg" alt="album" width="80px" height="80px"
+                                    class="rounded-start">
+                                <a href="#" class="p-3 title">Zigaexperientia</a>
+                            </li>
+                            <li class="col rounded d-flex p-0">
+                                <img src="assets/img/animebr.jpg" alt="album" width="80px" height="80px"
+                                    class="rounded-start">
+                                <a href="#" class="p-3 title">Miura Jam BR</a>
+                            </li>
+                            <li class="col rounded d-flex p-0">
+                                <img src="assets/img/aqua_timez.jpg" alt="album" width="80px" height="80px"
+                                    class="rounded-start">
+                                <a href="#" class="p-3 title">Aqua Timez</a>
+                            </li>
+                        </ul>
 
-                </section>
+                    </section>
 
-                <section class="item-2">
-                    <div class="d-flex justify-content-between align-items-center title-item">
-                        <h3><a href="#" class="title">Seus programas</a></h3>
-                        <a class="see-all" href="#">ver tudo</a>
-                    </div>
-                    <!-- ultimos podcasts acessados -->
-                    <ul class="d-flex list-unstyled justify-content-between">
-                        <li class=" flex-column card p-3  li-hover">
-
-                            <img class="mb-3 img-card" src="assets/img/iconicast.jpg" alt="">
-                            <a href="#">ICONICast - Arte, desenho e outras coisas nada artísticas.</a>
-                            <p>ICONIC Network</p>
-
-                        </li>
-                        <li class="flex-column card p-3  li-hover">
-
-                            <img class="mb-3 img-card" src="assets/img/paciente 63.jpg" alt="">
-                            <a href="#">Paciente 63</a>
-                            <p>Spotify Studios</p>
-
-                        </li>
-
-                        <li class="flex-column card p-3 d-none d-lg-block li-hover">
-
-                            <img class="mb-3 img-card" src="assets/img/duolingo.jpg" alt="">
-                            <a href="#">Histórias em Inglês</a>
-                            <p>Duolingo</p>
-
-                        </li>
-                        <li class="flex-column card p-3 d-none d-lg-block li-hover ">
-
-                            <img class="mb-3 img-card" src="assets/img/percy_jackson.jpg" alt="">
-                            <a href="#">Percy Jackson</a>
-                            <p>AudioBooks</p>
-
-                        </li>
-                        <li class="flex-column card p-3 d-none d-lg-block d-xl-none li-hover">
-
-                            <img class="mb-3 img-card" src="assets/img/nerdcast.jpg" alt="">
-                            <a href="#">NerdCast</a>
-                            <p>Jovem Nerd</p>
-
-                        </li>
-                        <li class="flex-column card p-3 d-none d-lg-block  d-xl-none li-hover">
-
-                            <img class="mb-3 img-card" src="assets/img/pensandoRPG.jpg" alt="">
-                            <a href="#">Pensando RPG</a>
-                            <p>Leonardo Schabbach</p>
-
-                        </li>
-                    </ul>
-                </section>
-
-                <div style="height: 100px;"></div>
+                    
+                </div>
             </div>
         </main>
-        <footer class="fixed-bottom color-3 border-top d-flex align-items-center justify-content-between player">
 
-            <!-- img album -->
-            <div class="d-flex flex-fill adjacent">
-                <img src="assets/img/Flow.jpg" alt="capa do album da musica" width="56px" height="56px">
-                <div class="d-flex flex-column mx-3 justify-content-center music-artist">
-                    <!-- nome musica  -->
-                    <a class="music" href="#">COLORS</a>
-                    <!-- nome banda/musico -->
-                    <a class="artist" href="#">FLOW</a>
-                </div>
-                <!-- curtir/adicionar na playlist -->
-                <button class="btn-size">
-                    <img src="assets/img/heart.svg" alt="curtir">
-                </button>
-                <!-- display -->
-                <button class="btn-size">
-                    <img src="assets/img/pip.svg" alt="display">
-                </button>
-            </div>
-            <!-- player principal -->
-            <div class="d-flex flex-fill justify-content-center player-space">
-                <div class="d-flex flex-column player-size">
-                    <!-- player controle -->
-                    <div class="player-control">
-                        <div class="d-flex justify-content-center">
-                            <div class="">
-                                <!-- aleatorio -->
-                                <button class="btn-size">
-                                    <img src="assets/img/shuffle.svg" alt="aleatório">
-                                </button>
-                                <!-- voltar -->
-                                <button class="btn-size">
-                                    <img src="assets/img/skip-start-fill.svg" alt="voltar">
-                                </button>
-                            </div>
-                            <!-- play -->
-                            <button class="btn-size btn-size-play">
-                                <img src="assets/img/play-fill.svg" alt="play">
-                            </button>
-                            <div>
-                                <!-- avancar -->
-                                <button class="btn-size">
-                                    <img src="assets/img/skip-end-fill.svg" alt="avançar">
-                                </button>
-                                <!-- repetir/loop -->
-                                <button class="btn-size">
-                                    <img src="assets/img/arrow-repeat.svg" alt="repetir">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- barra de tempo/progresso -->
-                    <div class="d-flex justify-content-between align-items-center bar-text">
-                        <p>0:00</p>
-                        <div class="d-flex flex-fill progress mx-3">
-                            <progress class="progress-bar"></progress>
-                        </div>
-                        <p>3:00</p>
-                    </div>
-                </div>
-
-
-            </div>
-            <!-- menu secundário -->
-            <div class="d-flex flex-fill justify-content-end align-items-center adjacent">
-                <!-- letra(musica) -->
-                <button class="btn-size">
-                    <img src="assets/img/file-earmark-music.svg" alt="letra">
-                </button>
-                <!-- fila(das proximas musicas) -->
-                <button class="btn-size">
-                    <img src="assets/img/music-note-list.svg" alt="fila">
-                    <!-- conectar um dispositivo -->
-                </button>
-                <button class="btn-size">
-                    <img src="assets/img/tv.svg" alt="Conectar um dispositivo">
-                </button>
-                <!-- volume -->
-                <button class="btn-size">
-                    <img src="assets/img/volume-up.svg" alt="volume">
-                </button>
-                <div class="progress vol-bar">
-                    <progress class="progress-bar vol"></progress>
-                </div>
-
-                <!-- tela cheia -->
-                <button class="btn-size">
-                    <img src="assets/img/arrows-angle-expand.svg" alt="Tela cheia">
-                </button>
-            </div>
-
-        </footer>
     </div>
 
+    <footer class="fixed-bottom bg-danger border-top d-flex align-items-center justify-content-between player">
+
+        <!-- img album -->
+        <div class="d-flex flex-fill adjacent">
+            <img src="assets/img/Flow.jpg" alt="capa do album da musica" width="56px" height="56px">
+            <div class="d-flex flex-column mx-3 justify-content-center music-artist">
+                <!-- nome musica  -->
+                <a class="music" href="#">COLORS</a>
+                <!-- nome banda/musico -->
+                <a class="artist" href="#">FLOW</a>
+            </div>
+            <!-- curtir/adicionar na playlist -->
+            <button class="btn-size">
+                <img src="assets/img/heart.svg" alt="curtir">
+            </button>
+            <!-- display -->
+            <button class="btn-size">
+                <img src="assets/img/pip.svg" alt="display">
+            </button>
+        </div>
+        <!-- player principal -->
+        <div class="d-flex flex-fill justify-content-center player-space">
+            <div class="d-flex flex-column player-size">
+                <!-- player controle -->
+                <div class="player-control">
+                    <div class="d-flex justify-content-center">
+                        <div class="">
+                            <!-- aleatorio -->
+                            <button class="btn-size">
+                                <img src="assets/img/shuffle.svg" alt="aleatório">
+                            </button>
+                            <!-- voltar -->
+                            <button class="btn-size">
+                                <img src="assets/img/skip-start-fill.svg" alt="voltar">
+                            </button>
+                        </div>
+                        <!-- play -->
+                        <button class="btn-size btn-size-play">
+                            <img src="assets/img/play-fill.svg" alt="play">
+                        </button>
+                        <div>
+                            <!-- avancar -->
+                            <button class="btn-size">
+                                <img src="assets/img/skip-end-fill.svg" alt="avançar">
+                            </button>
+                            <!-- repetir/loop -->
+                            <button class="btn-size">
+                                <img src="assets/img/arrow-repeat.svg" alt="repetir">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- barra de tempo/progresso -->
+                <div class="d-flex justify-content-between align-items-center bar-text">
+                    <p>0:00</p>
+                    <div class="d-flex flex-fill progress mx-3">
+                        <progress class="progress-bar"></progress>
+                    </div>
+                    <p>3:00</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- menu secundário -->
+        <div class="d-flex flex-fill justify-content-end align-items-center adjacent">
+            <!-- letra(musica) -->
+            <button class="btn-size">
+                <img src="assets/img/file-earmark-music.svg" alt="letra">
+            </button>
+            <!-- fila(das proximas musicas) -->
+            <button class="btn-size">
+                <img src="assets/img/music-note-list.svg" alt="fila">
+                <!-- conectar um dispositivo -->
+            </button>
+            <button class="btn-size">
+                <img src="assets/img/tv.svg" alt="Conectar um dispositivo">
+            </button>
+            <!-- volume -->
+            <button class="btn-size">
+                <img src="assets/img/volume-up.svg" alt="volume">
+            </button>
+            <div class="progress vol-bar">
+                <progress class="progress-bar vol"></progress>
+            </div>
+
+            <!-- tela cheia -->
+            <button class="btn-size">
+                <img src="assets/img/arrows-angle-expand.svg" alt="Tela cheia">
+            </button>
+        </div>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
