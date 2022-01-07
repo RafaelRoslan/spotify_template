@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* -----fonte-----*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;800&display=swap');
 
 /* -----webkit-----*/
 progress::-webkit-progress-bar { background: #b3b3b3; }
@@ -14,15 +14,17 @@ progress::-webkit-progress-bar { background: #b3b3b3; }
 * {
     margin: 0px;
     padding: 0px;
-    color: #fff;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
     font-weight: 800;
 }
 /* reset */
-p, a{
+h2,h3,h4,h5,p, a{
     margin: 0px;
+    color: #fff;
 }
+
+a{ text-decoration: none;}
 
 html, body{
     width: 100%;
@@ -41,7 +43,7 @@ section{
 }
 
 
-.main-size{
+.main, .main-content{
     height: calc(100vh - 91px);
 }
 
@@ -106,12 +108,12 @@ section{
 /* -----------------------------Main----------------------------------- */
 
 .main-content{
-    padding: 0px 32px;
+    padding: 0px 32px ;
     background-color    : #121212;
 }
 #topbar {height: 64px;}
 
-.arrows button{
+.arrows button, .info-music button, .player-control button, .controls button{
     width: 32px;
     height: 32px;
     text-align: center;
@@ -153,20 +155,158 @@ section{
     gap: 24px;
 }
 
-#greeting {margin-bottom: 16px;}
+#greeting h2 {
+    height: 43.59px; 
+    margin-bottom: 16px;}
 
-.content section ul{
+#greeting ul{
     grid-auto-flow: row;
-    
+    gap: 16px 0px;
     overflow-y: hidden;
 }
 
-.content section ul li{
-    background-color: rgba(255, 255, 255, 0.1);
-    min-width: 250px;
-    max-width: 1000px;
+#greeting ul li{
     height: 80px;
+    padding: 0 24px 0 0;
 }
+.bg-card{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sector div{
+    height: 33px;
+    margin-bottom: 16px;
+}
+
+.sector ul{
+    margin: 0px;
+}
+
+.sector ul li{
+    padding: 0px;
+    max-width: 210px;
+    max-height: 287px;
+}
+
+.card-section{
+    background-color: #181818;
+    padding: 16px;
+}
+
+.card-section img{
+    max-width: 177px;
+    max-height: 177px;
+    border-radius: 12px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* --------------------------------Player----------------------------------- */
+
+footer{ 
+    height: 91px;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    padding: 0px 16px;
+}
+
+/* .adjacent{
+    width: 30%;
+} */
+
+.music-cover{
+    width: 56px;
+    height: 56px;
+}
+
+
+.info-music button, .player-control button, .controls button{ background-color: transparent;}
+.player-control button{ margin: 0px 4px;}
+.player{width: 20.5%;}
+
+.player-control{ margin-bottom: 12px;}
+
+#btn-play{background-color: #fff;}
+
+.progress{
+    height: 4px;
+    border-radius: 4px;
+    background-color: #535353;
+}
+.vol-bar{width: 93px;}
+/* ---------------------------------------------------------------------------------------------------*/
+
+.current{
+    border-radius: 4px;
+    background-color: #282828;}
+
+
+#sidebar-ul-1 li p, #sidebar-ul-2 li p{
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 16px;
+        text-transform: none;
+        color: #b3b3b3;
+    }
+#sidebar-musics li a p{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-transform: none;
+}
+
+.navbar button p{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-transform: none;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -.04em;
+    line-height: 36px;
+    text-transform: none;
+}
+
+
+h3 a{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -.04em;
+    line-height: 28px;
+    text-transform: none;
+}
+
+.more{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-transform: none;
+}
+
+h4 p{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-transform: none;
+}
+/* -------------------------------------------hovers--------------------------------------------------*/
+
+
 
 
 /* 
@@ -266,9 +406,8 @@ p {
 }
 
 .img-card{
-    width: 177px;
-    height: 177px;
-    border-radius: 12px;
+
+    
 }
 
 .n-principal li{
@@ -349,7 +488,7 @@ h3 a{
 
 .player{
     height: 91px;
-    padding: 0px 16px;
+
 }
 
 .music-artist a{
@@ -384,11 +523,6 @@ h3 a{
 }
 .adjacent{
     width: 30%;
-     width: 24.5%;
-}
-
-.border-top{
-    border-top: 1px solid #282828 !important;
 }
 
 .vol-bar{

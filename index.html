@@ -20,9 +20,9 @@
                     <a href="#"><img src="assets/img/logo.svg" alt="logo"></a>
                 </div>
                 <!-- opções pricipais -->
-                <ul class="nav nav-pills flex-grow-1 flex-column" id="sidebar-ul-1">
+                <ul class="nav flex-grow-1 flex-column" id="sidebar-ul-1">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active d-flex flex-nowrap align-items-center">
+                        <a href="#" class="nav-link current d-flex flex-nowrap align-items-center">
                             <div class="img-margin">
                                 <img src="assets/img/house-door-fill.svg" alt="home/inicio">
                             </div>
@@ -118,8 +118,8 @@
             </nav>
         </header>
 
-        <main class=" container-fluid p-0 flex-column overflow-auto">          
-            <div class="main-content">
+        <main class=" container-fluid p-0 flex-column ">
+            <div class="main-content overflow-auto">
                 <nav class="d-flex align-items-center justify-content-between" id="topbar">
                     <!-- barra de ir/voltar -->
                     <div class="arrows d-flex">
@@ -155,169 +155,237 @@
                 <div class="content d-grid">
                     <!-- <div class="gradient-effect"></div> -->
                     <!-- recentes -->
-                    <section>
+                    <section id="greeting">
 
-                        <h2 id="greeting">Olá Steve</h2>
+                        <h2>Olá Steve</h2>
                         <!-- ultimas playlist/paginas acessadas -->
 
-                        <ul class="list-unstyled row gap-3 row-cols-12">
-                            <li class="rounded d-flex p-0">
-                                <img src="assets/img/liked-songs-640.png" alt="album" width="80px" height="80px"
-                                    class="rounded-start">
-                                <a href="#" class="p-3 title">Musicas curtidas</a>
+                        <ul class="list-unstyled row m-0">
+                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
+                                <a class="bg-card rounded d-flex align-items-center" href="#">
+                                    <img src="assets/img/liked-songs-640.png" alt="album" width="80px" height="80px"
+                                        class="rounded-start">
+                                    <p class="p-3">Musicas curtidas</p>
+                                </a>
                             </li>
-                            <li class="col rounded d-flex p-0">
-                                <img src="assets/img/animeOST.jpg" alt="album" width="80px" height="80px"
-                                    class="rounded-start">
-                                <a href="#" class="p-3 title">AnimeOST</a>
+                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
+                                <a class=" bg-card rounded d-flex align-items-center" href="#">
+                                    <img src="assets/img/animeOST.jpg" alt="album" width="80px" height="80px"
+                                        class="rounded-start">
+                                    <p class="p-3">AnimeOST</p>
+                                </a>
                             </li>
-                            <li class="col rounded d-flex p-0">
-                                <img src="assets/img/outros.jpg" alt="album" width="80px" height="80px"
-                                    class="rounded-start">
-                                <a href="#" class="p-3 title">Outros</a>
+                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-sm-block">
+                                <a class="bg-card rounded d-flex align-items-center" href="#">
+                                    <img src="assets/img/outros.jpg" alt="album" width="80px" height="80px"
+                                        class="rounded-start">
+                                    <p class="p-3">Outros</p>
+                                </a>
                             </li>
-                            <li class="col rounded d-flex p-0">
-                                <img src="assets/img/ryo_takt.jpg" alt="album" width="80px" height="80px"
-                                    class="rounded-start">
-                                <a href="#" class="p-3 title">Ryo&lpar;supercell&rpar;</a>
+                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-sm-block">
+                                <a class="bg-card rounded d-flex align-items-center" href="#">
+                                    <img src="assets/img/ryo_takt.jpg" alt="album" width="80px" height="80px"
+                                        class="rounded-start">
+                                    <p class="p-3">Ryo&lpar;supercell&rpar;</p>
+                                </a>
                             </li>
-                            <li class="col rounded d-flex p-0">
-                                <img src="assets/img/Flow.jpg" alt="album" width="80px" height="80px"
-                                    class="rounded-start">
-                                <a href="#" class="p-3 title">Flow</a>
+                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-xl-block">
+                                <a class="bg-card rounded d-flex align-items-center" href="#">
+                                    <img src="assets/img/Flow.jpg" alt="album" width="80px" height="80px"
+                                        class="rounded-start">
+                                    <p class="p-3">Flow</p>
+                                </a>
                             </li>
-                            <li class="col rounded d-flex p-0">
-                                <img src="assets/img/zigaexperientia.jpg" alt="album" width="80px" height="80px"
-                                    class="rounded-start">
-                                <a href="#" class="p-3 title">Zigaexperientia</a>
+                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-xl-block">
+                                <a class="bg-card rounded d-flex align-items-center" href="#">
+                                    <img src="assets/img/zigaexperientia.jpg" alt="album" width="80px" height="80px"
+                                        class="rounded-start">
+                                    <p class="p-3">Zigaexperientia</p>
+                                </a>
                             </li>
-                            <li class="col rounded d-flex p-0">
-                                <img src="assets/img/animebr.jpg" alt="album" width="80px" height="80px"
-                                    class="rounded-start">
-                                <a href="#" class="p-3 title">Miura Jam BR</a>
+                            <li class="ccol-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-xxl-block">
+                                <a class="bg-card rounded d-flex align-items-center" href="#">
+                                    <img src="assets/img/animebr.jpg" alt="album" width="80px" height="80px"
+                                        class="rounded-start">
+                                    <p class="p-3">Miura Jam BR</p>
+                                </a>
                             </li>
-                            <li class="col rounded d-flex p-0">
-                                <img src="assets/img/aqua_timez.jpg" alt="album" width="80px" height="80px"
-                                    class="rounded-start">
-                                <a href="#" class="p-3 title">Aqua Timez</a>
+                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-xxl-block">
+                                <a class="bg-card rounded d-flex align-items-center" href="#">
+                                    <img src="assets/img/aqua_timez.jpg" alt="album" width="80px" height="80px"
+                                        class="rounded-start">
+                                    <p class="p-3">Aqua Timez</p>
+                                </a>
                             </li>
                         </ul>
 
                     </section>
-                    
-                    <section class="item-2">
-                        <div class="d-flex justify-content-between align-items-center title-item">
-                            <h3><a href="#" class="title">Seus programas</a></h3>
-                            <a class="see-all" href="#">ver tudo</a>
+
+                    <section class="sector">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3><a href="#">Seus programas</a></h3>
+                            <a class="more" href="#">ver tudo</a>
                         </div>
                         <!-- ultimos podcasts acessados -->
-                        <ul class="d-flex list-unstyled justify-content-between">
-                            <li class=" flex-column card p-3  li-hover">
-
-                                <img class="mb-3 img-card" src="assets/img/iconicast.jpg" alt="">
-                                <a href="#">ICONICast - Arte, desenho e outras coisas nada artísticas.</a>
-                                <p>ICONIC Network</p>
-
+                        <ul class="row list-unstyled justify-content-between">
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3" src="assets/img/iconicast.jpg" alt="">
+                                    <h4 class="text-truncate">ICONICast - Arte, desenho e outras coisas nada artísticas.</h4>
+                                    <p>ICONIC Network</p>
+                                </a>
                             </li>
-                            <li class="flex-column card p-3  li-hover">
-
-                                <img class="mb-3 img-card" src="assets/img/paciente 63.jpg" alt="">
-                                <a href="#">Paciente 63</a>
-                                <p>Spotify Studios</p>
-
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3" src="assets/img/paciente 63.jpg" alt="">
+                                    <h4 class="text-truncate">Paciente 63</h4>
+                                    <p>Spotify Studios</p>
+                                </a>
                             </li>
-
-                            <li class="flex-column card p-3 d-none d-lg-block li-hover">
-
-                                <img class="mb-3 img-card" src="assets/img/duolingo.jpg" alt="">
-                                <a href="#">Histórias em Inglês</a>
-                                <p>Duolingo</p>
-
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-sm-block">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3" src="assets/img/duolingo.jpg" alt="">
+                                    <h4 class="text-truncate">Histórias em Inglês</h4>
+                                    <p>Duolingo</p>
+                                </a>
                             </li>
-                            <li class="flex-column card p-3 d-none d-lg-block li-hover ">
-
-                                <img class="mb-3 img-card" src="assets/img/percy_jackson.jpg" alt="">
-                                <a href="#">Percy Jackson</a>
-                                <p>AudioBooks</p>
-
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-lg-block">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3" src="assets/img/percy_jackson.jpg" alt="">
+                                    <h4 class="text-truncate" >Percy Jackson</h4>
+                                    <p>AudioBooks</p>
+                                </a>
                             </li>
-                            <li class="flex-column card p-3 d-none d-lg-block d-xl-none li-hover">
-
-                                <img class="mb-3 img-card" src="assets/img/nerdcast.jpg" alt="">
-                                <a href="#">NerdCast</a>
-                                <p>Jovem Nerd</p>
-
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-xl-block">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3" src="assets/img/nerdcast.jpg" alt="">
+                                    <h4 class="text-truncate" >NerdCast</h4>
+                                    <p>Jovem Nerd</p>
+                                </a>
                             </li>
-                            <li class="flex-column card p-3 d-none d-lg-block  d-xl-none li-hover">
-
-                                <img class="mb-3 img-card" src="assets/img/pensandoRPG.jpg" alt="">
-                                <a href="#">Pensando RPG</a>
-                                <p>Leonardo Schabbach</p>
-
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-xxl-block">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3 img-card" src="assets/img/pensandoRPG.jpg" alt="">
+                                    <h4 class="text-truncate">Pensando RPG</h4>
+                                    <p>Leonardo Schabbach</p>
+                                </a>
                             </li>
                         </ul>
                     </section>
-                    
+
+                    <section class="sector">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3><a href="#">Seus programas</a></h3>
+                            <a class="more" href="#">ver tudo</a>
+                        </div>
+                        <!-- ultimos podcasts acessados -->
+                        <ul class="row list-unstyled justify-content-between">
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3" src="assets/img/iconicast.jpg" alt="">
+                                    <h4 class="text-truncate">ICONICast - Arte, desenho e outras coisas nada artísticas.</h4>
+                                    <p>ICONIC Network</p>
+                                </a>
+                            </li>
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3" src="assets/img/paciente 63.jpg" alt="">
+                                    <h4 class="text-truncate">Paciente 63</h4>
+                                    <p>Spotify Studios</p>
+                                </a>
+                            </li>
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-sm-block">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3" src="assets/img/duolingo.jpg" alt="">
+                                    <h4 class="text-truncate">Histórias em Inglês</h4>
+                                    <p>Duolingo</p>
+                                </a>
+                            </li>
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-lg-block">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3" src="assets/img/percy_jackson.jpg" alt="">
+                                    <h4 class="text-truncate" >Percy Jackson</h4>
+                                    <p>AudioBooks</p>
+                                </a>
+                            </li>
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-xl-block">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3" src="assets/img/nerdcast.jpg" alt="">
+                                    <h4 class="text-truncate" >NerdCast</h4>
+                                    <p>Jovem Nerd</p>
+                                </a>
+                            </li>
+                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-xxl-block">
+                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
+                                    <img class="mb-3 img-card" src="assets/img/pensandoRPG.jpg" alt="">
+                                    <h4 class="text-truncate">Pensando RPG</h4>
+                                    <p>Leonardo Schabbach</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
                 </div>
             </div>
         </main>
 
     </div>
 
-    <footer class="fixed-bottom bg-danger border-top d-flex align-items-center justify-content-between player">
+    <footer class="fixed-bottom d-flex align-items-center justify-content-between">
 
         <!-- img album -->
-        <div class="d-flex flex-fill adjacent">
-            <img src="assets/img/Flow.jpg" alt="capa do album da musica" width="56px" height="56px">
-            <div class="d-flex flex-column mx-3 justify-content-center music-artist">
+        <div class="d-flex flex-fill align-items-center adjacent info-music">
+            <img class="music-cover" src="assets/img/Flow.jpg" alt="capa do album da musica" >
+            <div class="d-flex flex-column mx-3 justify-content-center">
                 <!-- nome musica  -->
-                <a class="music" href="#">COLORS</a>
+                <a href="#">COLORS</a>
                 <!-- nome banda/musico -->
-                <a class="artist" href="#">FLOW</a>
+                <a href="#">FLOW</a>
             </div>
             <!-- curtir/adicionar na playlist -->
-            <button class="btn-size">
+            <button>
                 <img src="assets/img/heart.svg" alt="curtir">
             </button>
             <!-- display -->
-            <button class="btn-size">
+            <button>
                 <img src="assets/img/pip.svg" alt="display">
             </button>
         </div>
         <!-- player principal -->
-        <div class="d-flex flex-fill justify-content-center player-space">
-            <div class="d-flex flex-column player-size">
+        <div class="d-flex flex-fill justify-content-center player">
+            <div class="d-flex flex-column w-100">
                 <!-- player controle -->
+                
                 <div class="player-control">
                     <div class="d-flex justify-content-center">
-                        <div class="">
+                        
                             <!-- aleatorio -->
-                            <button class="btn-size">
+                            <button>
                                 <img src="assets/img/shuffle.svg" alt="aleatório">
                             </button>
                             <!-- voltar -->
-                            <button class="btn-size">
+                            <button>
                                 <img src="assets/img/skip-start-fill.svg" alt="voltar">
                             </button>
-                        </div>
+                        
                         <!-- play -->
-                        <button class="btn-size btn-size-play">
+                        <button id="btn-play">
                             <img src="assets/img/play-fill.svg" alt="play">
                         </button>
-                        <div>
+                        
                             <!-- avancar -->
-                            <button class="btn-size">
+                            <button>
                                 <img src="assets/img/skip-end-fill.svg" alt="avançar">
                             </button>
                             <!-- repetir/loop -->
-                            <button class="btn-size">
+                            <button>
                                 <img src="assets/img/arrow-repeat.svg" alt="repetir">
                             </button>
-                        </div>
+                        
                     </div>
                 </div>
                 <!-- barra de tempo/progresso -->
-                <div class="d-flex justify-content-between align-items-center bar-text">
+                <div class="d-flex justify-content-between align-items-center">
                     <p>0:00</p>
                     <div class="d-flex flex-fill progress mx-3">
                         <progress class="progress-bar"></progress>
@@ -329,21 +397,21 @@
 
         </div>
         <!-- menu secundário -->
-        <div class="d-flex flex-fill justify-content-end align-items-center adjacent">
+        <div class="d-flex flex-fill justify-content-end align-items-center controls">
             <!-- letra(musica) -->
-            <button class="btn-size">
+            <button>
                 <img src="assets/img/file-earmark-music.svg" alt="letra">
             </button>
             <!-- fila(das proximas musicas) -->
-            <button class="btn-size">
+            <button>
                 <img src="assets/img/music-note-list.svg" alt="fila">
                 <!-- conectar um dispositivo -->
             </button>
-            <button class="btn-size">
+            <button >
                 <img src="assets/img/tv.svg" alt="Conectar um dispositivo">
             </button>
             <!-- volume -->
-            <button class="btn-size">
+            <button>
                 <img src="assets/img/volume-up.svg" alt="volume">
             </button>
             <div class="progress vol-bar">
@@ -351,7 +419,7 @@
             </div>
 
             <!-- tela cheia -->
-            <button class="btn-size">
+            <button>
                 <img src="assets/img/arrows-angle-expand.svg" alt="Tela cheia">
             </button>
         </div>
