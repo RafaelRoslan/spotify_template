@@ -320,9 +320,14 @@ h4 p, .song{
 /* -------------------------------------------hovers--------------------------------------------------*/
 #sidebar-ul-1 li a,
 #sidebar-ul-2 li a,
-#sidebar-musics li a{
+#sidebar-musics li a,
+.info-music button,
+.control-left button,
+.control-right button,
+.controls button{
     opacity: .75;
 }
+
 
 #sidebar-ul-1 li a:hover,
 #sidebar-ul-2 li a:hover,
@@ -335,8 +340,6 @@ h4 p, .song{
     background-color: #282828;
 }
 
-.dropdown-menu {}
-
 .card-section:hover{
     background-color: #282828;
 }
@@ -348,4 +351,14 @@ h4 p, .song{
 .sector div a:hover, .song:hover, .artist:hover{
     color: #fff;
     text-decoration: underline;
+}
+
+.info-music button:hover, .control-left button:hover, .control-right button:hover, .controls button:hover{
+    opacity: 1;
+}
+
+.dropdown-item:hover{
+    color: #fff;
+    background-color: rgba(255,255,255,.1);
+    
 }
