@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style_music.css">
 </head>
 
 <body>
@@ -17,12 +18,12 @@
             <nav class="d-flex navbar p-0">
                 <!-- LOGO Spotify -->
                 <div class="logo flex-grow-1">
-                    <a href="#"><img src="./assets/img/logo.svg" alt="logo"></a>
+                    <a href="./index.html"><img src="./assets/img/logo.svg" alt="logo"></a>
                 </div>
                 <!-- opções pricipais -->
                 <ul class="nav flex-grow-1 flex-column" id="sidebar-ul-1">
                     <li class="nav-item">
-                        <a href="#" class="nav-link current d-flex flex-nowrap align-items-center">
+                        <a href="./index.html" class="nav-link d-flex flex-nowrap align-items-center">
                             <div class="img-margin">
                                 <img src="./assets/img/house-door-fill.svg" alt="home/inicio">
                             </div>
@@ -118,217 +119,204 @@
             </nav>
         </header>
 
-        <main class=" container-fluid p-0 flex-column ">
-            <div class="main-content overflow-auto">
-                <nav class="d-flex align-items-center justify-content-between" id="topbar">
-                    <!-- barra de ir/voltar -->
-                    <div class="arrows d-flex">
-                        <button class="d-flex align-items-center justify-content-center">
-                            <img src="./assets/img/chevron-left.svg" alt="voltar">
-                        </button>
-                        <button class="d-flex align-items-center justify-content-center">
-                            <img src="./assets/img/chevron-right.svg" alt="avançar">
-                        </button>
-                    </div>
-
-                    <!-- botao  usuario -->
-                    <div class="dropdown">
-                        <button class="btn d-flex align-items-center" type="button" id="button-user"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="./assets/img/user_img.png" alt="foto do usuário">
-                            <p class="mx-2 title">Rafael Steve</p>
-                            <img class="me-2" src="./assets/img/caret.svg" alt="seta">
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="button-user">
-                            <li>
-                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
-                                    <p class="title">Conta</p>
-                                    <img src="./assets/img/box-arrow-up-right.svg" alt="conta">
-                                </a>
-                            </li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#">Perfil</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#">Sair</a></li>
-                        </ul>
-                    </div>
-
-                </nav>
-                <div class="content d-grid">
-                    
-                    <!-- recentes -->
-                    <section id="greeting">
-
-                        <h2>Olá Steve</h2>
-                        <!-- ultimas playlist/paginas acessadas -->
-
-                        <ul class="list-unstyled row m-0">
-                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
-                                <a class="bg-card rounded d-flex align-items-center" href="#">
-                                    <img src="./assets/img/liked-songs-640.png" alt="album" width="80px" height="80px"
-                                        class="rounded-start">
-                                    <p class="p-3">Musicas curtidas</p>
-                                </a>
-                            </li>
-                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
-                                <a class=" bg-card rounded d-flex align-items-center" href="#">
-                                    <img src="./assets/img/animeOST.jpg" alt="album" width="80px" height="80px"
-                                        class="rounded-start">
-                                    <p class="p-3">AnimeOST</p>
-                                </a>
-                            </li>
-                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-sm-block">
-                                <a class="bg-card rounded d-flex align-items-center" href="#">
-                                    <img src="./assets/img/outros.jpg" alt="album" width="80px" height="80px"
-                                        class="rounded-start">
-                                    <p class="p-3">Outros</p>
-                                </a>
-                            </li>
-                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-sm-block">
-                                <a class="bg-card rounded d-flex align-items-center" href="#">
-                                    <img src="./assets/img/ryo_takt.jpg" alt="album" width="80px" height="80px"
-                                        class="rounded-start">
-                                    <p class="p-3">Ryo&lpar;supercell&rpar;</p>
-                                </a>
-                            </li>
-                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-xl-block">
-                                <a class="bg-card rounded d-flex align-items-center" href="#">
-                                    <img src="./assets/img/Flow.jpg" alt="album" width="80px" height="80px"
-                                        class="rounded-start">
-                                    <p class="p-3">Flow</p>
-                                </a>
-                            </li>
-                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-xl-block">
-                                <a class="bg-card rounded d-flex align-items-center" href="#">
-                                    <img src="./assets/img/zigaexperientia.jpg" alt="album" width="80px" height="80px"
-                                        class="rounded-start">
-                                    <p class="p-3">Zigaexperientia</p>
-                                </a>
-                            </li>
-                            <li class="ccol-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-xxl-block">
-                                <a class="bg-card rounded d-flex align-items-center" href="#">
-                                    <img src="./assets/img/animebr.jpg" alt="album" width="80px" height="80px"
-                                        class="rounded-start">
-                                    <p class="p-3">Miura Jam BR</p>
-                                </a>
-                            </li>
-                            <li class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 d-none d-xxl-block">
-                                <a class="bg-card rounded d-flex align-items-center" href="#">
-                                    <img src="./assets/img/aqua_timez.jpg" alt="album" width="80px" height="80px"
-                                        class="rounded-start">
-                                    <p class="p-3">Aqua Timez</p>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </section>
-
-                    
-                    <section class="sector">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h3><a href="#">Seus programas</a></h3>
-                            <a class="more" href="#">ver tudo</a>
+        <main class=" container-fluid p-0 flex-column">
+            <div class="t position-relative w-100 overflow-auto">
+               
+                    <!-- titulo pagina -->
+                    <section class="position-relative part-top m-0">
+                        <nav class="d-flex align-items-center justify-content-between position-sticky" id="topbar">
+                            <!-- barra de ir/voltar -->
+                            <div class="arrows d-flex">
+                                <button class="d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/chevron-left.svg" alt="voltar">
+                                </button>
+                                <button class="d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/chevron-right.svg" alt="avançar">
+                                </button>
+                            </div>
+        
+                            <!-- botao  usuario -->
+                            <div class="dropdown">
+                                <button class="btn d-flex align-items-center" type="button" id="button-user"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/img/user_img.png" alt="foto do usuário">
+                                    <p class="mx-2 title">Rafael Steve</p>
+                                    <img class="me-2" src="./assets/img/caret.svg" alt="seta">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="button-user">
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                            <p class="title">Conta</p>
+                                            <img src="./assets/img/box-arrow-up-right.svg" alt="conta">
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#">Perfil</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#">Sair</a></li>
+                                </ul>
+                            </div>
+        
+                        </nav>
+                        <div style="background-color: aqua;" class="w-100  d-flex align-items-end d-flex">
+                            <img src="#" alt="Criar playlist" class="img-title">
+                            <div>
+                                <h2>playlist</h2>
+                                <p>Suas Musicas</p>
+                                <div class="d-flex">
+                                    <div class="d-flex">
+                                        <img src="" alt="">
+                                        <p>Rafael Roslan</p>
+                                    </div>
+                                    <p>.160 musicas</p>
+                                </div>
+                            </div>
                         </div>
-                        <!-- ultimos podcasts acessados -->
-                        <ul class="row list-unstyled justify-content-between">
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3" src="./assets/img/iconicast.jpg" alt="">
-                                    <h4 class="text-truncate">ICONICast - Arte, desenho e outras coisas nada artísticas.
-                                    </h4>
-                                    <p>ICONIC Network</p>
-                                </a>
-                            </li>
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3" src="./assets/img/paciente 63.jpg" alt="">
-                                    <h4 class="text-truncate">Paciente 63</h4>
-                                    <p>Spotify Studios</p>
-                                </a>
-                            </li>
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-sm-block">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3" src="./assets/img/duolingo.jpg" alt="">
-                                    <h4 class="text-truncate">Histórias em Inglês</h4>
-                                    <p>Duolingo</p>
-                                </a>
-                            </li>
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-lg-block">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3" src="./assets/img/percy_jackson.jpg" alt="">
-                                    <h4 class="text-truncate">Percy Jackson</h4>
-                                    <p>AudioBooks</p>
-                                </a>
-                            </li>
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-xl-block">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3" src="./assets/img/nerdcast.jpg" alt="">
-                                    <h4 class="text-truncate">NerdCast</h4>
-                                    <p>Jovem Nerd</p>
-                                </a>
-                            </li>
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-xxl-block">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3 img-card" src="./assets/img/pensandoRPG.jpg" alt="">
-                                    <h4 class="text-truncate">Pensando RPG</h4>
-                                    <p>Leonardo Schabbach</p>
-                                </a>
-                            </li>
-                        </ul>
+                        
                     </section>
-
-                    <section class="sector">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h3><a href="#">Seus programas</a></h3>
-                            <a class="more" href="#">ver tudo</a>
-                        </div>
-                        <!-- ultimos podcasts acessados -->
-                        <ul class="row list-unstyled justify-content-between">
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3" src="./assets/img/iconicast.jpg" alt="">
-                                    <h4 class="text-truncate">ICONICast - Arte, desenho e outras coisas nada artísticas.
-                                    </h4>
-                                    <p>ICONIC Network</p>
-                                </a>
-                            </li>
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3" src="./assets/img/paciente 63.jpg" alt="">
-                                    <h4 class="text-truncate">Paciente 63</h4>
-                                    <p>Spotify Studios</p>
-                                </a>
-                            </li>
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-sm-block">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3" src="./assets/img/duolingo.jpg" alt="">
-                                    <h4 class="text-truncate">Histórias em Inglês</h4>
-                                    <p>Duolingo</p>
-                                </a>
-                            </li>
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-lg-block">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3" src="./assets/img/percy_jackson.jpg" alt="">
-                                    <h4 class="text-truncate">Percy Jackson</h4>
-                                    <p>AudioBooks</p>
-                                </a>
-                            </li>
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-xl-block">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3" src="./assets/img/nerdcast.jpg" alt="">
-                                    <h4 class="text-truncate">NerdCast</h4>
-                                    <p>Jovem Nerd</p>
-                                </a>
-                            </li>
-                            <li class="col-6 col-sm-4 col-lg-3 col-xl-2 d-none d-xxl-block">
-                                <a class="card-section d-flex flex-column h-100 rounded" href="#">
-                                    <img class="mb-3 img-card" src="./assets/img/pensandoRPG.jpg" alt="">
-                                    <h4 class="text-truncate">Pensando RPG</h4>
-                                    <p>Leonardo Schabbach</p>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="efeito position-absolute"></div>
+                    <div style="height: 104px; background-color: coral;"></div>
+                    <section>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </section>
-
-                </div>
+                    <section>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </section>
+               
             </div>
         </main>
 
