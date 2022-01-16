@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* -----fonte-----*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;800;900&display=swap');
 
 /* -----webkit-----*/
 progress::-webkit-progress-bar { background: #b3b3b3; }

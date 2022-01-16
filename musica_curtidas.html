@@ -25,7 +25,7 @@
                     <li class="nav-item">
                         <a href="./index.html" class="nav-link d-flex flex-nowrap align-items-center">
                             <div class="img-margin">
-                                <img src="./assets/img/house-door-fill.svg" alt="home/inicio">
+                                <img src="./assets/img/house-door.svg" alt="home/inicio">
                             </div>
                             <p>Início</p>
                         </a>
@@ -121,97 +121,370 @@
 
         <main class=" container-fluid p-0 flex-column">
             <div class="main-size position-relative w-100 overflow-auto">
-               
-                    <!-- titulo pagina -->
-                    <section class="position-relative part-top m-0">
-                        <nav class="d-flex align-items-center justify-content-between position-sticky" id="topbar">
-                            <!-- barra de ir/voltar -->
-                            <div class="arrows d-flex">
-                                <button class="d-flex align-items-center justify-content-center">
-                                    <img src="./assets/img/chevron-left.svg" alt="voltar">
-                                </button>
-                                <button class="d-flex align-items-center justify-content-center">
-                                    <img src="./assets/img/chevron-right.svg" alt="avançar">
-                                </button>
+
+                <!-- titulo pagina -->
+                <section class="position-relative part-top m-0">
+                    <nav class="d-flex align-items-center justify-content-between position-sticky" id="topbar">
+                        <!-- barra de ir/voltar -->
+                        <div class="arrows d-flex">
+                            <button class="d-flex align-items-center justify-content-center">
+                                <img src="./assets/img/chevron-left.svg" alt="voltar">
+                            </button>
+                            <button class="d-flex align-items-center justify-content-center">
+                                <img src="./assets/img/chevron-right.svg" alt="avançar">
+                            </button>
+                        </div>
+
+                        <!-- botao  usuario -->
+                        <div class="dropdown">
+                            <button class="btn d-flex align-items-center" type="button" id="button-user"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/img/user_img.png" alt="foto do usuário">
+                                <p class="mx-2 title">Rafael Steve</p>
+                                <img class="me-2" src="./assets/img/caret.svg" alt="seta">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="button-user">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        <p class="title">Conta</p>
+                                        <img src="./assets/img/box-arrow-up-right.svg" alt="conta">
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item d-flex align-items-center" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center" href="#">Sair</a></li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                    <div class="w-100  d-flex align-items-end d-flex mt-4">
+                        <img src="./assets/img/liked-songs-640.png" alt="Criar playlist" class="img-title">
+                        <div class="section-title">
+                            <h2>playlist</h2>
+                            <h1>Musicas Curtidas</h1>
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/img/user_img.png" alt="usuario" id="user-img">
+                                    <a href="#">Rafael Roslan</a>
+                                </div>
+                                <img src="./assets/img/dot.svg" alt="ponto" id="dot">
+                                <p>160 muúicas</p>
                             </div>
-        
-                            <!-- botao  usuario -->
-                            <div class="dropdown">
-                                <button class="btn d-flex align-items-center" type="button" id="button-user"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./assets/img/user_img.png" alt="foto do usuário">
-                                    <p class="mx-2 title">Rafael Steve</p>
-                                    <img class="me-2" src="./assets/img/caret.svg" alt="seta">
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="button-user">
-                                    <li>
-                                        <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
-                                            <p class="title">Conta</p>
-                                            <img src="./assets/img/box-arrow-up-right.svg" alt="conta">
-                                        </a>
-                                    </li>
-                                    <li><a class="dropdown-item d-flex align-items-center" href="#">Perfil</a></li>
-                                    <li><a class="dropdown-item d-flex align-items-center" href="#">Sair</a></li>
-                                </ul>
-                            </div>
-        
-                        </nav>
-                        <div class="w-100  d-flex align-items-end d-flex">
-                            <img src="./assets/img/liked-songs-640.png" alt="Criar playlist" class="img-title">
-                            <div>
-                                <h2>playlist</h2>
-                                <p>Suas Musicas</p>
-                                <div class="d-flex">
-                                    <div class="d-flex">
-                                        <img src="" alt="">
-                                        <p>Rafael Roslan</p>
-                                    </div>
-                                    <p>.160 musicas</p>
+                        </div>
+                    </div>
+
+                </section>
+                <div class="g-effect position-absolute"></div>
+                <div class="btn-bar">
+                    <button class="btn-like-music d-flex align-items-center justify-content-center">
+                        <img src="./assets/img/play-fill.svg" alt="play" class="m-play">
+                    </button>
+                </div>
+
+                <!-- tabela de musicas -->
+                <section class="music-table">
+
+                    <div class="t-head d-grid">
+                        <div class="d-flex align-items-center justify-content-end t-index">
+                            <p>#</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>título</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>álbum</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>adicionado em</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p><img src="./assets/img/clock.svg" alt="duração"></p>
+                        </div>
+                    </div>
+                    <!-- itens-tabela -->
+                    <!-- 1 -->
+                    <div class="t-item d-grid">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p>1</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="item-title d-flex align-items-center">
+                                <img src="./assets/img/Miki_matsubara.jpg" alt="Capa álbum">
+                                <div>
+                                    <p class="t-music">Mayonaka no Door / Stay With Me</p>
+                                    <p>Miki Matsubara</p>
                                 </div>
                             </div>
                         </div>
-                        
-                    </section>
-                    <div class="g-effect position-absolute"></div>
-                    <div style="height: 104px;" class="btn-bar">
-                        <button class="btn-like-music"></button>
-                    </div>
-                    <section class="music-table">
-
-                        <!-- <div class="table-head row">
-                            <div class="col-1"><p>#</p></div>
-                            <div class="col-4"><p>titulo</p></div>
-                            <div class="col-3"><p>album</p></div>
-                            <div class="col-3"><p>adicionado em</p></div>
-                            <div class="col-1"><p><img src="./assets/img/clock.svg" alt=""></p></div>
+                        <div class="d-flex align-items-center">
+                            <p>Miki Matsubara Best Collection</p>
                         </div>
-                        <div class="table-body">
+                        <div class="d-flex align-items-center">
+                            <p>há 1 dia</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="item-time d-flex">
+                                <button class="item-like"><img src="./assets/img/heart-fill.svg" alt="Curtido" class="img-time"></button>
+                                <p>5:12</p>
+                                <button><img src="./assets/img/three-dots.svg" alt="Opções"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="t-item d-grid">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p>2</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="item-title d-flex align-items-center">
+                                <img src="./assets/img/Takt.jpg" alt="Capa álbum">
+                                <div>
+                                    <p class="t-music">takt</p>
+                                    <p>Ryo(supercell),Mafumafu,gaku</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>takt</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>há 14 dias</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="item-time d-flex">
+                                <button class="item-like"><img src="./assets/img/heart-fill.svg" alt="Curtido" class="img-time"></button>
+                                <p>3:57</p>
+                                <button><img src="./assets/img/three-dots.svg" alt="Opções"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="t-item d-grid">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p>3</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="item-title d-flex align-items-center">
+                                <img src="./assets/img/Dobie_gray.jpg" alt="Capa álbum">
+                                <div>
+                                    <p class="t-music">Drift Away</p>
+                                    <p>Dobie Gray</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>Throwback Tunes: 70s</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>3 de dez. de 2021</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="item-time d-flex">
+                                <button class="item-like"><img src="./assets/img/heart-fill.svg" alt="Curtido" class="img-time"></button>
+                                <p>3:54</p>
+                                <button><img src="./assets/img/three-dots.svg" alt="Opções"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="t-item d-grid">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p>4</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="item-title d-flex align-items-center">
+                                <img src="./assets/img/akeboshi.jpg" alt="Capa álbum">
+                                <div>
+                                    <p class="t-music">Wind</p>
+                                    <p>Akeboshi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>Akeboshi</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>20 de nov. de 2021</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="item-time d-flex">
+                                <button class="item-like"><img src="./assets/img/heart-fill.svg" alt="Curtido" class="img-time"></button>
+                                <p>3:40</p>
+                                <button><img src="./assets/img/three-dots.svg" alt="Opções"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="t-item d-grid">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p>5</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="item-title d-flex align-items-center">
+                                <img src="./assets/img/Don_L.jpg" alt="Capa álbum">
+                                <div>
+                                    <p class="t-music">Aquela Fé</p>
+                                    <p>Don L, Nego Gallo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>Roteiro Pra Aïnouz (Vol. 3)</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>27 de out. de 2021</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="item-time d-flex">
+                                <button class="item-like"><img src="./assets/img/heart-fill.svg" alt="Curtido" class="img-time"></button>
+                                <p>6:08</p>
+                                <button><img src="./assets/img/three-dots.svg" alt="Opções"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="t-item d-grid">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p>6</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="item-title d-flex align-items-center">
+                                <img src="./assets/img/AC_DC.jpg" alt="Capa álbum">
+                                <div>
+                                    <p class="t-music">Highway to Hell</p>
+                                    <p>AC/DC</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>Highway to Hell</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>10 de out. de 2021</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="item-time d-flex">
+                                <button class="item-like"><img src="./assets/img/heart-fill.svg" alt="Curtido" class="img-time"></button>
+                                <p>3:28</p>
+                                <button><img src="./assets/img/three-dots.svg" alt="Opções"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="t-item d-grid">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p>7</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="item-title d-flex align-items-center">
+                                <img src="./assets/img/KALEO.jpg" alt="Capa álbum">
+                                <div>
+                                    <p class="t-music">Break My Baby</p>
+                                    <p>KALEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>Skinny</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>13 de abr. de 2021</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="item-time d-flex">
+                                <button class="item-like"><img src="./assets/img/heart-fill.svg" alt="Curtido" class="img-time"></button>
+                                <p>4:25</p>
+                                <button><img src="./assets/img/three-dots.svg" alt="Opções"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="t-item d-grid">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p>8</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="item-title d-flex align-items-center">
+                                <img src="./assets/img/asian_kung_fu.jpg" alt="Capa álbum">
+                                <div>
+                                    <p class="t-music">RE:RE:</p>
+                                    <p>ASIAN KUNG-FU GENERATION</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>Re:Re:</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>20 de mar. de 2021</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="item-time d-flex">
+                                <button class="item-like"><img src="./assets/img/heart-fill.svg" alt="Curtido" class="img-time"></button>
+                                <p>5:32</p>
+                                <button><img src="./assets/img/three-dots.svg" alt="Opções"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="t-item d-grid">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p>9</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="item-title d-flex align-items-center">
+                                <img src="./assets/img/ali_aklo.jpg" alt="Capa álbum">
+                                <div>
+                                    <p class="t-music">LOST IN PARADISE</p>
+                                    <p>ALI, AKLO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>LOST IN PARADISE</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>3 de jan. de 2021</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="item-time d-flex">
+                                <button class="item-like"><img src="./assets/img/heart-fill.svg" alt="Curtido" class="img-time"></button>
+                                <p>5:27</p>
+                                <button><img src="./assets/img/three-dots.svg" alt="Opções"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="t-item d-grid">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <p>10</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="item-title d-flex align-items-center">
+                                <img src="./assets/img/Taylor_Davis.jpg" alt="Capa álbum">
+                                <div>
+                                    <p class="t-music">Awakening</p>
+                                    <p>Taylor Davis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>Taylor Davis</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>15 de dez. de 2020</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="item-time d-flex">
+                                <button class="item-like"><img src="./assets/img/heart-fill.svg" alt="Curtido" class="img-time"></button>
+                                <p>3:42</p>
+                                <button><img src="./assets/img/three-dots.svg" alt="Opções"></button>
+                            </div>
+                        </div>
+                    </div>
 
-                        </div> -->
 
-                        <table class="px-3">
-                            <thead>
-                              <tr>
-                                <th>#</th>
-                                <th>Título</th>
-                                <th ">Álbum</th>
-                                <th >Adicionado em</th>
-                                <th ><img src="./assets/img/clock.svg" alt="duração"></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>4:13</td>
-                              </tr>
-                              
-                            </tbody>
-                          </table>
-                    </section>
-               
+                </section>
+
             </div>
         </main>
 

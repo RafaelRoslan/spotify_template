@@ -23,12 +23,22 @@ main{
     height: 232px;
     margin-right: 24px;
 }
+#dot{
+    width: 16px;
+    height: 16px;
+}
+
+#user-img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
 
 .g-effect{
     width: 100%;
     height: 232px;
-    /* background-color: rgb(80, 56, 160); */
-    background-image: linear-gradient(rgba(80,56,160,.27) 0,transparent);
+    background-image: linear-gradient(rgba(80,56,160,.35) 0,transparent);
     z-index: -1;
     
 }
@@ -39,6 +49,7 @@ main{
 
 .btn-bar{
     padding: 24px 32px;
+    height: 104px;
 }
 
 .btn-like-music{
@@ -49,26 +60,116 @@ main{
     background-color: #1db954;
 }
 
+.m-play{
+    width: 30px;
+    height: 30px;    
+    filter: invert(97%) sepia(3%) saturate(0%) hue-rotate(118deg) brightness(118%) contrast(100%);
+
+}
+
+/* ----------------------------------tabela-------------------------------------------- */
 .music-table{
     padding: 0px 32px;
 }
 
-table{width: 100%;}
-
-thead th{
-    height: 35px;
+.t-head,.t-item{
+    padding: 0px 16px;
+    grid-template-columns: 16px 6fr 4fr 3fr minmax(120px,1fr);
+    gap: 16px;
 }
-tbody tr{ height: 56px;}
+.t-head{
+    height: 36px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
 
-thead th:first-child, tbody th:first-child{
-    padding-left: 16px;
+.t-head img{filter: opacity(.5);}
+.t-time{ margin-right: 32px;}
+
+.t-item{
+    height: 56px;
+    border-radius: 4px;
+}
+
+.item-title{height: 54px;}
+.item-title img{
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+.item-title div{ height: 40px;}
+
+
+
+.item-time button{
     width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
 }
 
-thead th:last-child, tbody td:last-child{
-    padding-right: 16px;
+.item-like{ margin-right: 24px;}
+.item-time p{margin-right: 16px;}
+
+.img-time{
+    width: 14px;
+    height: 14px;    
+    filter: invert(52%) sepia(96%) saturate(374%) hue-rotate(89deg) brightness(91%) contrast(97%);
+
 }
 
-td, tr{
+/* ----------------------------------------------fonte---------------------------------------- */
+
+.section-title h2{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-title h1{
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 900;
     color: #fff;
-} 
+}
+
+.section-title p, .t-head p{
+    font-weight: 400;
+    color: rgba(255,255,255,.5);
+}
+
+.t-head p{
+    font-size: 12px;
+    letter-spacing: .1em;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.t-index p{font-size: 16px;}
+
+.t-item p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(255,255,255,.5);
+}
+
+.t-item .t-music{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;}
+
+
+/* -------------------------hover------------------------ */
+.t-item:hover{
+    background-color: rgba(255,255,255,.1);;
+}
+
+.section-title a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.btn-like-music:hover{
+    transform: scale(1.05);
+}
