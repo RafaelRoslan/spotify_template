@@ -52,3 +52,23 @@ main{
 .music-table{
     padding: 0px 32px;
 }
+
+table{width: 100%;}
+
+thead th{
+    height: 35px;
+}
+tbody tr{ height: 56px;}
+
+thead th:first-child, tbody th:first-child{
+    padding-left: 16px;
+    width: 16px;
+}
+
+thead th:last-child, tbody td:last-child{
+    padding-right: 16px;
+}
+
+td, tr{
+    color: #fff;
+} 
